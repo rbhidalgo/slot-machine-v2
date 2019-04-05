@@ -1,11 +1,21 @@
-/* .container {
+.enter-amount {
     display: flex;
-    display: none;
-} */
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
 
 body {
     display: flex;
     background-color: antiquewhite;
+}
+
+.slots {
+    display: flex;
+    flex-direction: row;
 }
 
 .slot-column1 {
@@ -24,8 +34,4 @@ body {
     flex: 1;
     display: flex;
     background-color: rgb(5, 42, 112);
-}
-
-.enter-amount {
-    display: flex;
 }
