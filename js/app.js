@@ -1,7 +1,5 @@
 console.log("up and running!")
 
-
-
 const dogSlot1Photos = ['photos/artboard1.png','photos/artboard2.png', 'photos/artboard3.png', 
     'photos/artboard4.png','photos/artboard5.png', 'photos/artboard6.png']
 

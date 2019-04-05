@@ -1,16 +1,41 @@
+body {
+    font-family: 'Pirata One', cursive;
+    display: flex;
+    background-color: antiquewhite;
+}
+
+h1 {
+    font-size: 72px;
+    margin: 0 auto;
+}
 .enter-amount {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+}
+input {
+    background-color: green;
+    font-family: 'Pirata One', cursive;
+    font-size: 36px;
+    width: 150px;
+    height: 300px;
+    margin: 10px;
+    transition: width .35s ease-in-out;
+}
+
+input:focus { 
+    width: 500px;
+    background-color: yellow;
+  }
+
+.btn-amount {
+    display: flex;
+    margin: 0 auto;
 }
 
 .container {
-    display: flex;
+    display: none;
     flex-direction: column;
-}
-
-body {
-    display: flex;
-    background-color: antiquewhite;
 }
 
 .slots {
