@@ -1,12 +1,12 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anonymous Pro', monospace;
+}
+
 body {
-    font-family: 'Pirata One', cursive;
-    display: flex;
-    background-color: antiquewhite;
-    /* animation-name: background-animation;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-delay: 1s;
-    animation-timing-function: ease-in-out; */
+    background-color: antiquewhite; 
 }
 
 @keyframes background-animation {
@@ -17,40 +17,37 @@ body {
     100% {background-color: lightsalmon; border-color: royalblue}
 }
 
-.heading {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    text-align: center;
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+
 h1 {
+    font-family: 'Pirata One', cursive;
     font-size: 72px;
     margin: 0 auto;
+}
+
+h3 {
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 48px;
 }
 .enter-amount {
     display: flex;
     flex-direction: column;
     margin: 25px auto;
 }
-input {
-    background-color: green;
-    font-family: 'Pirata One', cursive;
-    font-size: 36px;
-    width: 150px;
-    height: 300px;
-    margin: 10px;
-    transition: width .35s ease-in-out;
-}
-
-input:focus { 
-    width: 500px;
-    background-color: yellow;
-  }
 
 .btn-amount {
     display: flex;
-    margin: 0 auto;
+    margin: 30px;
+    transition: width 1s ease-in-out;
 }
 
 img {
@@ -61,44 +58,38 @@ img {
 .container {
     display: none;
     background-color: antiquewhite;
-    /* width: 800px; */
     margin: 25px auto;
-    flex-direction: column;
-    transition: height 350ms ease-out, opacity 750ms cubic-bezier(0, 0, 0.2, 1);
+    animation-name: fadein;
+    animation-duration: 4s;
+    /* transition: height 350ms ease-out, opacity 750ms cubic-bezier(0, 0, 0.2, 1); */
 }
 
 .slots-background {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    padding: 50px;
-    /* border: 25px red dotted; */
-    /* max-width: 800px; */
-    /* background-color: rgba(138, 138, 138, 0.685); */
     border-radius: 50px;
-    /* animation-name: background-animation; */
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-delay: 1s;
     animation-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);
 }
 
-.slots-row1 {
-    background-color: #fff;
-    display: flex;
-    border-radius: 25px;
-    /* margin: 10px; */
-    /* padding: 10px; */
-    border: 15px silver solid;
-}
-
-.slots-row2, .slots-row3 {
+.slots-row1, .slots-row2, .slots-row3 {
     background-color: #fff;
     display: flex;
     border-radius: 25px;
     margin-top: 25px;
-    /* padding: 10px; */
     border: 15px silver solid;
+}
+
+.winnings-column {
+    background-color: red;
+    height: 600px;
+    width: 300px;
+}
+
+.status-column {
+    background-color: green;
+    height: 600px;
+    width: 300px;
 }
 
 .slot-column1,
@@ -111,33 +102,11 @@ img {
 .slot-column8,
 .slot-column9 {
     padding: 20px;
-    /* border: 10px; */
     margin: 0 20px;
     display: flex;
     flex: 1;
     background-color: #fff;
-    /* animation: flip-2-hor-top-1 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) 5 reverse both; */
 }
-
-/* /* .slot-column2 {
-    padding: 20px;
-    /* border: 10px; */
-    /* margin: 0 20px;
-    display: flex;
-    flex: 1;
-    background-color: #fff; */
-    /* animation: flip-2-hor-top-1 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) 5 reverse both; */
-/* } */
-
-/* .slot-column3 {
-    padding: 20px;
-    /* border: 10px; */
-    /* margin: 0 20px;
-    flex: 1;
-    display: flex;
-    background-color: #fff; */
-    /* animation: flip-2-hor-top-1 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) 5 reverse both; */
-/* } */ 
 
 @keyframes flip-2-hor-top-1 {
     0% {
@@ -148,4 +117,55 @@ img {
     transform: translateY(-100%) rotateX(-180deg);
     transform-origin: 50% 100%;
     }
+}
+
+.bet-btns {
+    display: flex;
+    flex-direction: row;
+}
+
+.twenty, .fifty, .hundred {
+    font-family: 'Pirata One', cursive;
+    display: flex;
+    flex-flow: row;
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px rgba(100, 100, 100, 0.219);
+    width: 200px;
+    height: 400px;
+}
+
+.twenty:hover, .fifty:hover, .hundred:hover {
+    background-color: #3e8e41}
+
+.twenty:active, .fifty:active, .hundred:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px rgba(39, 39, 39, 0.404);
+    transform: translateY(4px);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1
+}
+
+.center-slots-columns {
+    display: flex;
+    flex-direction: row;
 }
