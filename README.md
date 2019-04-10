@@ -1,8 +1,10 @@
 BEER O' SLOTS
 
 The process.
+
 A lot of planning
 
+<img src="https://rogandabe.photography/wp-content/uploads/2019/04/Beer_Glass_1.gif">
 
 
 
