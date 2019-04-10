@@ -5,6 +5,7 @@ A lot of planning
 
 
 
+
 How to play
 1. Choose amount of points to play.
 2. Choose X's how many points to bet.
