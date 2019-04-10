@@ -31,3 +31,5 @@ Javascript
 <br>
 <h2> Upcoming updates</h2>
 Beat the machine
+More animations
+More Slots
