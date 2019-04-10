@@ -41,14 +41,14 @@ let bet3Icons = document.querySelector('.bet3')
 let bet5Icons = document.querySelector('.bet5')
 let totalPointsDisplay = document.querySelector('.total')
 let lastWinDisplay = document.querySelector('.last-win')
-let lastBetDisplay = document.querySelector('.last-bet-made')
+let lastBetDisplay = document.querySelector('.last-bet')
 var currency = 0;
-var totalPoints = 0;
-
+let totalPoints = 0;
+let lastBet = 0;
 
 twentyBtn.addEventListener('click', function() {
     console.log(`twenty was pressed!`)
-    currency = 20;
+    currency = 50;
     totalPointsDisplay.innerHTML = `Total ${currency}`;
     console.log(currency)
     enterAmount.style.display = 'none';
@@ -57,7 +57,7 @@ twentyBtn.addEventListener('click', function() {
 
 fiftyBtn.addEventListener('click', function() {
     console.log(`fifty was pressed!`)
-    currency = 50;
+    currency = 100;
     totalPointsDisplay.innerHTML = currency;
     console.log(currency)
     enterAmount.style.display = 'none';
@@ -66,7 +66,7 @@ fiftyBtn.addEventListener('click', function() {
 
 hundBtn.addEventListener('click', function() {
     console.log(`hundred was pressed!`)
-    currency = 100;
+    currency = 150;
     totalPointsDisplay.innerHTML = currency;
     console.log(currency)
     enterAmount.style.display = 'none';
@@ -75,9 +75,9 @@ hundBtn.addEventListener('click', function() {
 
 betOnebtn.addEventListener('click', function(){
     resetColor()
-    bet3Icons.style.display = 'none';
-    bet5Icons.style.display = 'none';
-    // winSoundEff.pause()
+    // bet3Icons.style.display = 'none';
+    // bet5Icons.style.display = 'none';
+    lastBet = 5;
     console.log(`bet one was pressed`)
     spinSoundEff.play()
     setInterval (() => { 
@@ -96,24 +96,28 @@ betOnebtn.addEventListener('click', function(){
     resetAnimation()
     setTimeout(() => {
     totalPointsDisplay.innerHTML = `Total ${currency}`;
-    lastWinDisplay.innerHTML = `Last Win ${totalPoints}`;
-    totalPointsDisplay.style.color = 'red';
+    lastWinDisplay.innerHTML = `Total Wins ${totalPoints}`;
+    lastBetDisplay.innerHTML = `Last Bet ${lastBet}`
+    totalPointsDisplay.style.color = 'green';
     lastWinDisplay.style.color = 'green';
+    lastBetDisplay.style.color = 'green';
     }, 3000);
     setTimeout(() => {
     lastWinDisplay.style.color = 'black';
     totalPointsDisplay.style.color = 'black';
+    lastBetDisplay.style.color = 'black';
     }, 5000);
 })
 
 betThreebtn.addEventListener('click', function(){
     resetColor()
-    bet3Icons.style.display = 'flex';
-    bet5Icons.style.display = 'none';
-    // winSoundEff.pause()
+    // bet3Icons.style.display = 'flex';
+    // bet5Icons.style.display = 'none';
+    lastBet = 15;
     console.log(`bet one was pressed`)
     spinSoundEff.play()
     setInterval (() => { 
+    betThreebtn.style.animation = 'background-animation 3s 0s 1';
     slotColumn1.style.animation = 'cube-slot-ani 1.3s 0s 2';
     slotColumn2.style.animation = 'cube-slot-ani 1.2s 0s 2';
     slotColumn3.style.animation = 'cube-slot-ani 1.3s 0s 2';
@@ -126,16 +130,30 @@ betThreebtn.addEventListener('click', function(){
     }, 100);
     photoGenerate()
     resetAnimation()
+    setTimeout(() => {
+    totalPointsDisplay.innerHTML = `Total ${currency}`;
+    lastWinDisplay.innerHTML = `Total Wins ${totalPoints}`;
+    lastBetDisplay.innerHTML = `Last Bet ${lastBet}`
+    totalPointsDisplay.style.color = 'green';
+    lastWinDisplay.style.color = 'green';
+    lastBetDisplay.style.color = 'green';
+    }, 3000);
+    setTimeout(() => {
+    lastWinDisplay.style.color = 'black';
+    totalPointsDisplay.style.color = 'black';
+    lastBetDisplay.style.color = 'black';
+    }, 5000);
 })
 
 betFivebtn.addEventListener('click', function(){
     resetColor()
-    bet3Icons.style.display = 'flex';
-    bet5Icons.style.display = 'flex';
-    // winSoundEff.pause()
+    // bet3Icons.style.display = 'flex';
+    // bet5Icons.style.display = 'flex';
+    lastBet = 25;
     console.log(`bet one was pressed`)
     spinSoundEff.play()
     setInterval (() => { 
+    betFivebtn.style.animation = 'background-animation 3s 0s 1';
     slotColumn1.style.animation = 'cube-slot-ani 1.3s 0s 2';
     slotColumn2.style.animation = 'cube-slot-ani 1.2s 0s 2';
     slotColumn3.style.animation = 'cube-slot-ani 1.3s 0s 2';
@@ -148,20 +166,20 @@ betFivebtn.addEventListener('click', function(){
     }, 100);
     photoGenerate()
     resetAnimation()
+    setTimeout(() => {
+    totalPointsDisplay.innerHTML = `Total ${currency}`;
+    lastWinDisplay.innerHTML = `Total Wins ${totalPoints}`;
+    lastBetDisplay.innerHTML = `Last Bet ${lastBet}`
+    totalPointsDisplay.style.color = 'green';
+    lastWinDisplay.style.color = 'green';
+    lastBetDisplay.style.color = 'green';
+    }, 3000);
+    setTimeout(() => {
+    lastWinDisplay.style.color = 'black';
+    totalPointsDisplay.style.color = 'black';
+    lastBetDisplay.style.color = 'black';
+    }, 5000);
 })
-// let slotcol1anim = slotColumn1.style.animation = 'cube-slot-ani 1.3s 0s 2';
-// let slotcol2anim = slotColumn2.style.animation = 'cube-slot-ani 1.2s 0s 2';
-// let slotcol3anim = slotColumn3.style.animation = 'cube-slot-ani 1.3s 0s 2';
-// let slotcol4anim = slotColumn4.style.animation = 'cube-slot-ani 1.2s 0s 2';
-// let slotcol5anim = slotColumn5.style.animation = 'cube-slot-ani 1s 0s 2';
-// let slotcol6anim = slotColumn6.style.animation = 'cube-slot-ani .9s 0s 2';
-// let slotcol7anim = slotColumn7.style.animation = 'cube-slot-ani .8s 0s 2';
-// let slotcol8anim = slotColumn8.style.animation = 'cube-slot-ani .7s 0s 2';
-// let slotcol9anim = slotColumn9.style.animation = 'cube-slot-ani .6s 0s 2';
-
-// function aniOn () {
-//     slotcol1anim.
-// }
 
 function resetColor () {
     slotColumn1.style.backgroundColor = 'rgba(189, 191, 193, 0.8)';
@@ -177,6 +195,8 @@ function resetColor () {
 
 function resetAnimation () {
     betOnebtn.style.animation = '';
+    betThreebtn.style.animation = '';
+    betFivebtn.style.animation = '';
     slotColumn1.style.animation = '';
     slotColumn2.style.animation = '';
     slotColumn3.style.animation = '';
@@ -223,74 +243,74 @@ function photoGenerate() {
     }
 
 function colCheckBkc1() {
-    slotColumn4.style.backgroundColor = '#0766ef';
-    slotColumn1.style.backgroundColor = '#0766ef';
-    slotColumn7.style.backgroundColor = '#0766ef';
+    slotColumn4.style.backgroundColor = '#4CAF50';
+    slotColumn1.style.backgroundColor = '#4CAF50';
+    slotColumn7.style.backgroundColor = '#4CAF50';
 }
 
 function colCheckBkc2() {
-    slotColumn5.style.backgroundColor = '#0766ef';
-    slotColumn2.style.backgroundColor = '#0766ef';
-    slotColumn8.style.backgroundColor = '#0766ef';
+    slotColumn5.style.backgroundColor = '#4CAF50';
+    slotColumn2.style.backgroundColor = '#4CAF50';
+    slotColumn8.style.backgroundColor = '#4CAF50';
 }
 
 function colCheckBkc3() {
-    slotColumn6.style.backgroundColor = '#0766ef';
-    slotColumn3.style.backgroundColor = '#0766ef';
-    slotColumn9.style.backgroundColor = '#0766ef';
+    slotColumn6.style.backgroundColor = '#4CAF50';
+    slotColumn3.style.backgroundColor = '#4CAF50';
+    slotColumn9.style.backgroundColor = '#4CAF50';
 }
 
 function rowCheckBkc1() {
-    slotColumn1.style.backgroundColor = '#0766ef';
-    slotColumn2.style.backgroundColor = '#0766ef';
-    slotColumn3.style.backgroundColor = '#0766ef';
+    slotColumn1.style.backgroundColor = '#4CAF50';
+    slotColumn2.style.backgroundColor = '#4CAF50';
+    slotColumn3.style.backgroundColor = '#4CAF50';
 }
 
 function rowCheckBkc2() {
-    slotColumn4.style.backgroundColor = '#0766ef';
-    slotColumn5.style.backgroundColor = '#0766ef';
-    slotColumn6.style.backgroundColor = '#0766ef';
+    slotColumn4.style.backgroundColor = '#4CAF50';
+    slotColumn5.style.backgroundColor = '#4CAF50';
+    slotColumn6.style.backgroundColor = '#4CAF50';
 }
 
 function rowCheckBkc3() {
-    slotColumn7.style.backgroundColor = '#0766ef';
-    slotColumn8.style.backgroundColor = '#0766ef';
-    slotColumn9.style.backgroundColor = '#0766ef';
+    slotColumn7.style.backgroundColor = '#4CAF50';
+    slotColumn8.style.backgroundColor = '#4CAF50';
+    slotColumn9.style.backgroundColor = '#4CAF50';
 }
 
 function crossCheckBkc1() {
-    slotColumn5.style.backgroundColor = '#0766ef';
-    slotColumn3.style.backgroundColor = '#0766ef';
-    slotColumn7.style.backgroundColor = '#0766ef';
+    slotColumn5.style.backgroundColor = '#4CAF50';
+    slotColumn3.style.backgroundColor = '#4CAF50';
+    slotColumn7.style.backgroundColor = '#4CAF50';
 }
 
 function crossCheckBkc2() {
-    slotColumn5.style.backgroundColor = '#0766ef';
-    slotColumn9.style.backgroundColor = '#0766ef';
-    slotColumn1.style.backgroundColor = '#0766ef';
+    slotColumn5.style.backgroundColor = '#4CAF50';
+    slotColumn9.style.backgroundColor = '#4CAF50';
+    slotColumn1.style.backgroundColor = '#4CAF50';
 }
 
 function squareCheckBkc() {
-    slotColumn8.style.backgroundColor = '#0766ef';
-    slotColumn9.style.backgroundColor = '#0766ef';
-    slotColumn7.style.backgroundColor = '#0766ef';
-    slotColumn4.style.backgroundColor = '#0766ef';
-    slotColumn1.style.backgroundColor = '#0766ef';
-    slotColumn2.style.backgroundColor = '#0766ef';
-    slotColumn3.style.backgroundColor = '#0766ef';
-    slotColumn6.style.backgroundColor = '#0766ef';
+    slotColumn8.style.backgroundColor = '#4CAF50';
+    slotColumn9.style.backgroundColor = '#4CAF50';
+    slotColumn7.style.backgroundColor = '#4CAF50';
+    slotColumn4.style.backgroundColor = '#4CAF50';
+    slotColumn1.style.backgroundColor = '#4CAF50';
+    slotColumn2.style.backgroundColor = '#4CAF50';
+    slotColumn3.style.backgroundColor = '#4CAF50';
+    slotColumn6.style.backgroundColor = '#4CAF50';
 }
 
 function jackpotCheckBkc() {
-    slotColumn1.style.backgroundColor = '#0766ef';
-    slotColumn2.style.backgroundColor = '#0766ef';
-    slotColumn3.style.backgroundColor = '#0766ef';
-    slotColumn4.style.backgroundColor = '#0766ef';
-    slotColumn5.style.backgroundColor = '#0766ef';
-    slotColumn6.style.backgroundColor = '#0766ef';
-    slotColumn7.style.backgroundColor = '#0766ef';
-    slotColumn8.style.backgroundColor = '#0766ef';
-    slotColumn9.style.backgroundColor = '#0766ef';
+    slotColumn1.style.backgroundColor = '#4CAF50';
+    slotColumn2.style.backgroundColor = '#4CAF50';
+    slotColumn3.style.backgroundColor = '#4CAF50';
+    slotColumn4.style.backgroundColor = '#4CAF50';
+    slotColumn5.style.backgroundColor = '#4CAF50';
+    slotColumn6.style.backgroundColor = '#4CAF50';
+    slotColumn7.style.backgroundColor = '#4CAF50';
+    slotColumn8.style.backgroundColor = '#4CAF50';
+    slotColumn9.style.backgroundColor = '#4CAF50';
 }
 
 function columnCheck () {
@@ -299,7 +319,7 @@ function columnCheck () {
         row1Column1Photo.src = beerSlot2Photos[randNumR1C1]
         row3Column1Photo.src = beerSlot2Photos[randNumR3C1]
         currency += 1
-        totalPoints +=1
+        totalPoints += 1
         colCheckBkc1()
         console.log(`you won 1 points - ${currency}`)
     }
@@ -308,7 +328,7 @@ function columnCheck () {
         row1Column2Photo.src = beerSlot2Photos[randNumR1C2]
         row3Column2Photo.src = beerSlot2Photos[randNumR3C2]
         currency += 1
-        totalPoints +=1
+        totalPoints += 1
         colCheckBkc2()
             console.log(`you won 1 points - ${currency}`)
         }
@@ -317,7 +337,7 @@ function columnCheck () {
         row1Column3Photo.src = beerSlot2Photos[randNumR1C3]
         row3Column3Photo.src = beerSlot2Photos[randNumR3C3]
         currency += 1
-        totalPoints +=1
+        totalPoints += 1
         colCheckBkc3()
         console.log(`you won 1 points - ${currency}`)
         }
@@ -376,64 +396,57 @@ function crossCheck () {
     else currency -= 1
         console.log(`you lost 1 point - ${currency}`)
 }
-    function squareCheck () {
-        if (randNumR3C2 == randNumR3C3 && randNumR3C2 == randNumR3C1 &&
-            randNumR2C1 == randNumR3C1 && randNumR2C1 == randNumR1C1 &&
-            randNumR1C2 == randNumR1C1 && randNumR1C2 == randNumR1C3 &&
-            randNumR2C3 == randNumR3C3 && randNumR2C3 == randNumR1C3) {
-            row3Column2Photo.src = beerSlot2Photos[randNumR3C2]
-            row3Column3Photo.src = beerSlot2Photos[randNumR3C3]
-            row3Column1Photo.src = beerSlot2Photos[randNumR3C1]
-            row2Column1Photo.src = beerSlot2Photos[randNumR2C1]
-            row1Column1Photo.src = beerSlot2Photos[randNumR1C1]
-            row1Column2Photo.src = beerSlot2Photos[randNumR1C2]
-            row1Column3Photo.src = beerSlot2Photos[randNumR1C3]
-            row2Column3Photo.src = beerSlot2Photos[randNumR2C3]
-            currency += 50
-            totalPoints += 50
-            squareCheckBkc()
-            console.log(`YOU WON 50 POINTS!!!! - ${currency}`)
-            }
-        else currency -= 1
-            console.log(`you lost 1 point - ${currency}`)
-        }
-    function allCheckJackpot () {
-        if (randNumR2C2 == randNumR1C1 && randNumR2C2 == randNumR1C2 && randNumR2C2 == randNumR1C3 &&
-            randNumR2C2 == randNumR2C1 && randNumR2C2 == randNumR2C3 &&
-            randNumR2C2 == randNumR3C1 && randNumR2C2 == randNumR3C2 && randNumR2C2 == randNumR3C3){
-            row1Column1Photo.src = beerSlot2Photos[randNumR1C1]
-            row1Column2Photo.src = beerSlot2Photos[randNumR1C2]
-            row1Column3Photo.src = beerSlot2Photos[randNumR1C3]
-            row2Column1Photo.src = beerSlot2Photos[randNumR2C1]
-            row2Column2Photo.src = beerSlot2Photos[randNumR2C2]
-            row2Column3Photo.src = beerSlot2Photos[randNumR2C3]
-            row3Column1Photo.src = beerSlot2Photos[randNumR3C1]
-            row3Column2Photo.src = beerSlot2Photos[randNumR3C2]
-            row3Column3Photo.src = beerSlot2Photos[randNumR3C3]
-            currency += 1000000
-            totalPoints += 1000000
-            jackpotCheckBkc()
-            console.log(`JACKPOT!!!!!!!! ${currency}`)
-            }
-        else currency -= 1
-            console.log(`you lost 1 point - ${currency}`)
+function squareCheck () {
+if (randNumR3C2 == randNumR3C3 && randNumR3C2 == randNumR3C1 &&
+    randNumR2C1 == randNumR3C1 && randNumR2C1 == randNumR1C1 &&
+    randNumR1C2 == randNumR1C1 && randNumR1C2 == randNumR1C3 &&
+    randNumR2C3 == randNumR3C3 && randNumR2C3 == randNumR1C3) {
+    row3Column2Photo.src = beerSlot2Photos[randNumR3C2]
+    row3Column3Photo.src = beerSlot2Photos[randNumR3C3]
+    row3Column1Photo.src = beerSlot2Photos[randNumR3C1]
+    row2Column1Photo.src = beerSlot2Photos[randNumR2C1]
+    row1Column1Photo.src = beerSlot2Photos[randNumR1C1]
+    row1Column2Photo.src = beerSlot2Photos[randNumR1C2]
+    row1Column3Photo.src = beerSlot2Photos[randNumR1C3]
+    row2Column3Photo.src = beerSlot2Photos[randNumR2C3]
+    currency += 50
+    totalPoints += 50
+    squareCheckBkc()
+    console.log(`YOU WON 50 POINTS!!!! - ${currency}`)
     }
+else currency -= 1
+    console.log(`you lost 1 point - ${currency}`)
 }
 
+function allCheckJackpot () {
+if (randNumR2C2 == randNumR1C1 && randNumR2C2 == randNumR1C2 && randNumR2C2 == randNumR1C3 &&
+    randNumR2C2 == randNumR2C1 && randNumR2C2 == randNumR2C3 &&
+    randNumR2C2 == randNumR3C1 && randNumR2C2 == randNumR3C2 && randNumR2C2 == randNumR3C3){
+    row1Column1Photo.src = beerSlot2Photos[randNumR1C1]
+    row1Column2Photo.src = beerSlot2Photos[randNumR1C2]
+    row1Column3Photo.src = beerSlot2Photos[randNumR1C3]
+    row2Column1Photo.src = beerSlot2Photos[randNumR2C1]
+    row2Column2Photo.src = beerSlot2Photos[randNumR2C2]
+    row2Column3Photo.src = beerSlot2Photos[randNumR2C3]
+    row3Column1Photo.src = beerSlot2Photos[randNumR3C1]
+    row3Column2Photo.src = beerSlot2Photos[randNumR3C2]
+    row3Column3Photo.src = beerSlot2Photos[randNumR3C3]
+    currency += 1000000
+    totalPoints += 1000000
+    jackpotCheckBkc()
+    console.log(`JACKPOT!!!!!!!! ${currency}`)
+    }
+else currency -= 1
+    console.log(`you lost 1 point - ${currency}`)
+}
+}
 
 function gameOver () {
     if (currency <= 0){
     console.log(`You Lost!`)
-    containerDiv.style.animationName = 'fadeout';
-    // containerDiv.style.animation = 'fadeout, 10s, linear, 10s, 1, normal';
     containerDiv.style.display = 'none';
-    // enterAmount.style.animation = 'fadein, 10s, linear, 10s, 1, normal';
-    enterAmount.style.animationName = 'fadein';
     enterAmount.style.display = 'flex';
     document.querySelector('.amount-h1').innerHTML = 'Play Again?';
     currency = 0;
-    // const textAfterH1 = document.createElement('H1');
-    // textAfterH1.innerHTML = "You deserve a beer!";
-    // enterAmount.appendChild(textAfterH1);
     }
 }

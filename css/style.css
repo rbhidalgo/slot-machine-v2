@@ -25,11 +25,11 @@ body {
 }
 
 @keyframes background-animation {
-    0% {background-color: green; border-color: blue}
-    25% {background-color: greenyellow; border-color: blueviolet}
-    50% {background-color: yellowgreen; border-color: dodgerblue}
-    75% {background-color: orange; border-color: darkblue}
-    100% {background-color: lightsalmon; border-color: royalblue}
+    0% {background-color: green}
+    25% {background-color: blue}
+    50% {background-color: blueviolet}
+    75% {background-color: red}
+    100% {background-color: green}
 }
 
 @keyframes fadein {
@@ -83,6 +83,17 @@ h3 {
     font-family: 'Anonymous Pro', monospace;
     font-size: 36px;
 }
+
+.total, .last-win, .last-bet {
+    font-size: 24px;
+    padding: 10px;
+}
+
+p {
+    text-align: center;
+    line-height: 30px;
+}
+
 .enter-amount {
     display: flex;
     flex-direction: column;
@@ -127,7 +138,7 @@ h3 {
     /* background-color: blue; */
     height: 600px;
     /* width: 300px; */
-    margin-top: 25px;
+    margin-top: 10px;
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -136,7 +147,7 @@ h3 {
 .status-column {
     /* background-color: blue; */
     display: flex;
-    margin-top: 25px;
+    margin-top: 10px;
     flex: 1;
     flex-direction: column;
     height: 600px;
@@ -175,10 +186,11 @@ h3 {
     color: #fff;
     background-color: #4CAF50;
     border: none;
-    border-radius: 60px;
+    border-radius: 15px;
     box-shadow: 0 5px rgba(100, 100, 100, 0.219);
     width: 100px;
     height: 100px;
+    padding: 20px;
 }
 
 .twenty, .fifty, .hundred {
@@ -258,14 +270,12 @@ h3 {
     height: 100px;
 }
 
-
 .cube-face-front  { transform: rotateY(  0deg) translateZ(100px); }
 .cube-face-right  { transform: rotateY( 90deg) translateZ(100px); }
 .cube-face-back   { transform: rotateY(180deg) translateZ(100px); }
 .cube-face-left   { transform: rotateY(-90deg) translateZ(100px); }
 .cube-face-top    { transform: rotateX( 90deg) translateZ(100px); }
 .cube-face-bottom { transform: rotateX(-90deg) translateZ(100px); }
-
 
 .cube-column1 {
     width: 100%;
@@ -279,8 +289,8 @@ h3 {
     margin: 15px auto;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.3);
-    padding: 19px;
-    border-radius: 15px;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .tagline {
@@ -289,5 +299,12 @@ h3 {
     text-align: center;
     margin: 0px auto;
     padding: 20px;
+    background: linear-gradient(to right, rgba(217,142,4,0) 0%,rgba(255, 165, 0, 0.6) 25%,rgb(255, 165, 4) 50%,rgba(255, 165, 4, 0.6) 75%,rgba(217,142,4,0) 100%);
+}
+
+.winnings, .bets, .how-play {
+    height: 60px;
+    padding: 10px;
+    text-align: center;
     background: linear-gradient(to right, rgba(217,142,4,0) 0%,rgba(255, 165, 0, 0.6) 25%,rgb(255, 165, 4) 50%,rgba(255, 165, 4, 0.6) 75%,rgba(217,142,4,0) 100%);
 }
