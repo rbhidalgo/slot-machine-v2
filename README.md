@@ -12,14 +12,16 @@ A lot of planning
 <br>
 
 <h2>How to play</h2>
-1. Choose amount of points to play.
-2. Choose X's how many points to bet.
-3. Loose all your points.
-4. Hate slot machines.
-5. Drink a Beer.
-6. Add more points.
-7. Win 1 point.
-8. Repeat.
+<ol>
+  <li>Choose amount of points to play.</li>
+  <li>Choose X's how many points to bet.</li>
+  <li>Loose all your points.</li>
+  <li>Hate slot machines.</li>
+  <li>Drink a Beer.</li>
+  <li>Add more points.</li>
+  <li>Win 1 point.</li>
+  <li>Repeat.</li>
+ </ol>
 
 <h2>Techonlogies used</h2>
 HTML
