@@ -2,10 +2,8 @@
 
 The process.
 
-A lot of planning
+Planning
 
-<img src="https://rogandabe.photography/wp-content/uploads/2019/04/Beer_Glass_1.gif">
-<br>
 <img src="https://rogandabe.photography/wp-content/uploads/2019/04/IMG_4850.jpg">
 <br>
 <img src="https://rogandabe.photography/wp-content/uploads/2019/04/IMG_4838.jpg">
