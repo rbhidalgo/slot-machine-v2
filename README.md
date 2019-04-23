@@ -1,5 +1,5 @@
 <h1>BEER O' SLOTS</h1>
-<a href="https://rbhidalgo.github.io/project-1-slot-machine/">Link to Slot Machine Game</a>
+<a href="https://rbhidalgo.github.io/project-1-slot-machine/">Link to Slot Machine Game</a><br />
 The process.
 
 Planning
