@@ -1,10 +1,12 @@
 <h1>BEER O' SLOTS</h1>
-<a href="https://rbhidalgo.github.io/project-1-slot-machine/">Link to Slot Machine Game</a><br />
+<h3>
+<a href="https://rbhidalgo.github.io/project-1-slot-machine/">Link to Slot Machine Game</a><br /></h3>
 
 The planning process
-
+1. Plan the user flow
 <img src="https://rogandabe.photography/wp-content/uploads/2019/04/IMG_4850.jpg">
 <br>
+2. Figure out how to code the game
 <img src="https://rogandabe.photography/wp-content/uploads/2019/04/IMG_4838.jpg">
 <br>
 <h2> The Result</h2>
@@ -26,9 +28,10 @@ The planning process
 HTML
 CSS
 Javascript
+Vanilla Javascript
 
 <br>
 <h2> Upcoming updates</h2>
-Beat the machine
-More animations
-More Slots
+Beat the machine<br />
+More animations<br />
+More Slots<br />
