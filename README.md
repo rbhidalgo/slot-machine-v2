@@ -35,3 +35,6 @@ Vanilla Javascript
 Beat the machine<br />
 More animations<br />
 More Slots<br />
+
+<h2>Version 2.0 coming soon! </h2>
+Worked alongside a UX-UI designer to revamp the game.
