@@ -2,7 +2,7 @@
 <a href="https://rbhidalgo.github.io/project-1-slot-machine/">Link to Slot Machine Game</a><br />
 The process.
 
-Planning
+The planning process
 
 <img src="https://rogandabe.photography/wp-content/uploads/2019/04/IMG_4850.jpg">
 <br>
