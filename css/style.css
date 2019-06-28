@@ -2,14 +2,60 @@
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Anonymous Pro', monospace;
+    /* font-family: 'Anonymous Pro', monospace; */
+}
+
+html, body {
+    height: 100%;
+}
+
+.LOGO-Tagline {
+    width: 276px;
+    height: 308px;
+    object-fit: contain;
+  }
+
+.Spin-Drink-Win {
+    width: 275px;
+    height: 32px;
+    font-family: Copperplate;
+    font-size: 32px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+  }
+
+.play-button {
+    width: 250px;
+    height: 70px;
+    object-fit: contain;
 }
 
 body {
     /* background-color: antiquewhite; */
-    background: linear-gradient(179deg, #ffc100, #ffee00, #ff9400);
+    /* background: linear-gradient(179deg, #ffc100, #ffee00, #ff9400);
     background-size: 600% 600%;
-    animation: beer-background 3s ease infinite;
+    animation: beer-background 3s ease infinite; */
+    /* flex: 1; */
+    background-image: url(../photos/beerbackground-01.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 1px 3px 15px -6px rgba(0,0,0,0.41);
+    animation: beer-background 20s infinite ease-in-out;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
 }
 
 @keyframes beer-background { 
@@ -95,9 +141,9 @@ p {
 }
 
 .enter-amount {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    margin: 25px auto;
+    margin: 25px auto; */
 }
 
 .btn-amount {
@@ -117,6 +163,7 @@ p {
     margin: 25px auto;
     animation-name: fadein;
     animation-duration: 4s;
+    
     /* transition: height 350ms ease-out, opacity 750ms cubic-bezier(0, 0, 0.2, 1); */
 }
 
@@ -233,7 +280,7 @@ p {
 
 .heading {
     text-align: center;
-    margin: 20px auto;
+    margin: 0 auto;
 }
 
 .slot-rows {

@@ -1,5 +1,3 @@
-console.log("up and running!")
-
 const beerSlot1Photos = ['photos/artboard1.png','photos/artboard2.png', 'photos/artboard3.png', 
     'photos/artboard4.png','photos/artboard5.png', 'photos/artboard6.png']
 
@@ -14,7 +12,8 @@ let row2Column2Photo = document.querySelector('.row2-col2-cube1-photo')
 let row2Column3Photo = document.querySelector('.row2-col3-cube1-photo')
 let row3Column1Photo = document.querySelector('.row3-col1-cube1-photo')
 let row3Column2Photo = document.querySelector('.row3-col2-cube1-photo')
-let row3Column3Photo = document.querySelector('.row3-col3-cube1-photo') 
+let row3Column3Photo = document.querySelector('.row3-col3-cube1-photo')
+let playBtn = document.querySelector('.play-button')
 let twentyBtn = document.querySelector('.twenty')
 let fiftyBtn = document.querySelector('.fifty')
 let hundBtn = document.querySelector('.hundred')
@@ -46,7 +45,8 @@ var currency = 0;
 let totalPoints = 0;
 let lastBet = 0;
 
-twentyBtn.addEventListener('click', function() {
+
+playBtn.addEventListener('click', function() {
     console.log(`twenty was pressed!`)
     currency = 50;
     totalPointsDisplay.innerHTML = `Total ${currency}`;
@@ -55,23 +55,32 @@ twentyBtn.addEventListener('click', function() {
     containerDiv.style.display = 'inline';
 } )
 
-fiftyBtn.addEventListener('click', function() {
-    console.log(`fifty was pressed!`)
-    currency = 100;
-    totalPointsDisplay.innerHTML = currency;
-    console.log(currency)
-    enterAmount.style.display = 'none';
-    containerDiv.style.display = 'inline'; 
-} )
+// twentyBtn.addEventListener('click', function() {
+//     console.log(`twenty was pressed!`)
+//     currency = 50;
+//     totalPointsDisplay.innerHTML = `Total ${currency}`;
+//     console.log(currency)
+//     enterAmount.style.display = 'none';
+//     containerDiv.style.display = 'inline';
+// } )
 
-hundBtn.addEventListener('click', function() {
-    console.log(`hundred was pressed!`)
-    currency = 150;
-    totalPointsDisplay.innerHTML = currency;
-    console.log(currency)
-    enterAmount.style.display = 'none';
-    containerDiv.style.display = 'inline';
-} )
+// fiftyBtn.addEventListener('click', function() {
+//     console.log(`fifty was pressed!`)
+//     currency = 100;
+//     totalPointsDisplay.innerHTML = currency;
+//     console.log(currency)
+//     enterAmount.style.display = 'none';
+//     containerDiv.style.display = 'inline'; 
+// } )
+
+// hundBtn.addEventListener('click', function() {
+//     console.log(`hundred was pressed!`)
+//     currency = 150;
+//     totalPointsDisplay.innerHTML = currency;
+//     console.log(currency)
+//     enterAmount.style.display = 'none';
+//     containerDiv.style.display = 'inline';
+// } )
 
 betOnebtn.addEventListener('click', function(){
     resetColor()
@@ -136,6 +145,7 @@ betThreebtn.addEventListener('click', function(){
     lastBetDisplay.innerHTML = `Last Bet ${lastBet}`
     totalPointsDisplay.style.color = 'green';
     lastWinDisplay.style.color = 'green';
+    
     lastBetDisplay.style.color = 'green';
     }, 3000);
     setTimeout(() => {
