@@ -2,6 +2,8 @@
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Copperplate';
+    font-weight: 300;
     /* font-family: 'Anonymous Pro', monospace; */
 }
 
@@ -9,6 +11,7 @@ html, body {
     height: 100%;
 }
 
+/*****Landing Page ******/
 .enter-amount {
     display: flex;
     flex-direction: column;
@@ -20,13 +23,13 @@ html, body {
     justify-content: center;
     display: flex;
     flex-direction: column;
-}
+}   
 
 .enter-amount-bottom > h3{
     margin-bottom: 2vh;
     font-size: 18px;
-    font-family: Copperplate;
-    font-weight: 300;
+    /* font-family: Copperplate;
+    font-weight: 300; */
 }
 
 .enter-amount-bottom > a:link, a:visited {
@@ -42,13 +45,13 @@ html, body {
 .Spin-Drink-Win {
     width: 275px;
     height: 32px;
-    font-family: Copperplate;
+    /* font-family: Copperplate; */
     font-size: 32px;
-    font-weight: 300;
+    /* font-weight: 300;
     font-style: normal;
     font-stretch: normal;
     line-height: normal;
-    letter-spacing: normal;
+    letter-spacing: normal; */
     text-align: center;
     color: #000000;
   }
@@ -64,8 +67,8 @@ html, body {
     border: none;
     cursor: pointer;
     font-size: 32px;
-    font-family: Copperplate;
-    font-weight: 300;
+    /* font-family: Copperplate;
+    font-weight: 300; */
 }
 
 body {
@@ -80,7 +83,7 @@ body {
     background-size: cover;
     border-radius: 15px;
     box-shadow: 1px 3px 15px -6px rgba(0,0,0,0.41);
-    animation: beer-background 20s infinite ease-in-out;
+    /* animation: beer-background 20s infinite ease-in-out; */
 }
 
 .main-container {
@@ -151,17 +154,17 @@ h1 {
     letter-spacing: 15px;
     text-transform: uppercase;
 }
+    /* 
+    h2 {
+        font-family: 'Pirata One', cursive;
+        font-size: 72px;
+        margin: 0 auto;
+    }
 
-h2 {
-    font-family: 'Pirata One', cursive;
-    font-size: 72px;
-    margin: 0 auto;
-}
-
-h3 {
-    font-family: 'Anonymous Pro', monospace;
-    font-size: 36px;
-}
+    h3 {
+        font-family: 'Anonymous Pro', monospace;
+        font-size: 36px;
+    } */
 
 .total, .last-win, .last-bet {
     font-size: 24px;
@@ -202,10 +205,10 @@ p {
 
 .slots-background {
     border-radius: 50px;
-    animation-duration: 3s;
+    /* animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-delay: 1s;
-    animation-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);
+    animation-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1); */
 }
 
 .slots-row1, .slots-row2, .slots-row3 {
@@ -326,7 +329,7 @@ p {
     background-size: cover;
     border-radius: 15px;
     box-shadow: 1px 3px 15px -6px rgba(0,0,0,0.41);
-    animation: beer-background 20s infinite ease-in-out;
+    /* animation: beer-background 20s infinite ease-in-out; */
 }
 
 .cube-animation {
