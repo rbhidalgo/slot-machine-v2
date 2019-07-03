@@ -18,8 +18,8 @@ let twentyBtn = document.querySelector('.twenty')
 let fiftyBtn = document.querySelector('.fifty')
 let hundBtn = document.querySelector('.hundred')
 let slotsDiv = document.querySelector('.slots-row1')
-let enterAmount = document.querySelector('.enter-amount')
-let containerDiv = document.querySelector('.container')
+let landingPage = document.querySelector('.landing-page')
+let slotContainerDiv = document.querySelector('.slot-container')
 let slotColumn1 = document.querySelector('.slot-column1')
 let slotColumn2 = document.querySelector('.slot-column2')
 let slotColumn3 = document.querySelector('.slot-column3')
@@ -51,8 +51,8 @@ playBtn.addEventListener('click', function() {
     currency = 50;
     totalPointsDisplay.innerHTML = `Total ${currency}`;
     console.log(currency)
-    enterAmount.style.display = 'none';
-    containerDiv.style.display = 'inline';
+    landingPage.style.display = 'none';
+    slotContainerDiv.style.display = 'inline';
 } )
 
 // twentyBtn.addEventListener('click', function() {
@@ -60,8 +60,8 @@ playBtn.addEventListener('click', function() {
 //     currency = 50;
 //     totalPointsDisplay.innerHTML = `Total ${currency}`;
 //     console.log(currency)
-//     enterAmount.style.display = 'none';
-//     containerDiv.style.display = 'inline';
+//     landingPage.style.display = 'none';
+//     slotContainerDiv.style.display = 'inline';
 // } )
 
 // fiftyBtn.addEventListener('click', function() {
@@ -69,8 +69,8 @@ playBtn.addEventListener('click', function() {
 //     currency = 100;
 //     totalPointsDisplay.innerHTML = currency;
 //     console.log(currency)
-//     enterAmount.style.display = 'none';
-//     containerDiv.style.display = 'inline'; 
+//     landingPage.style.display = 'none';
+//     slotContainerDiv.style.display = 'inline'; 
 // } )
 
 // hundBtn.addEventListener('click', function() {
@@ -78,8 +78,8 @@ playBtn.addEventListener('click', function() {
 //     currency = 150;
 //     totalPointsDisplay.innerHTML = currency;
 //     console.log(currency)
-//     enterAmount.style.display = 'none';
-//     containerDiv.style.display = 'inline';
+//     landingPage.style.display = 'none';
+//     slotContainerDiv.style.display = 'inline';
 // } )
 
 betOnebtn.addEventListener('click', function(){
@@ -454,8 +454,8 @@ else currency -= 1
 function gameOver () {
     if (currency <= 0){
     console.log(`You Lost!`)
-    containerDiv.style.display = 'none';
-    enterAmount.style.display = 'flex';
+    slotContainerDiv.style.display = 'none';
+    landingPage.style.display = 'flex';
     document.querySelector('.amount-h1').innerHTML = 'Play Again?';
     currency = 0;
     }
