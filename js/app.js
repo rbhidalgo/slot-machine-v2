@@ -1,5 +1,3 @@
-console.log("up and running!")
-
 const beerSlot1Photos = ['photos/artboard1.png','photos/artboard2.png', 'photos/artboard3.png', 
     'photos/artboard4.png','photos/artboard5.png', 'photos/artboard6.png']
 
@@ -14,13 +12,14 @@ let row2Column2Photo = document.querySelector('.row2-col2-cube1-photo')
 let row2Column3Photo = document.querySelector('.row2-col3-cube1-photo')
 let row3Column1Photo = document.querySelector('.row3-col1-cube1-photo')
 let row3Column2Photo = document.querySelector('.row3-col2-cube1-photo')
-let row3Column3Photo = document.querySelector('.row3-col3-cube1-photo') 
+let row3Column3Photo = document.querySelector('.row3-col3-cube1-photo')
+let playBtn = document.querySelector('.play-button')
 let twentyBtn = document.querySelector('.twenty')
 let fiftyBtn = document.querySelector('.fifty')
 let hundBtn = document.querySelector('.hundred')
 let slotsDiv = document.querySelector('.slots-row1')
-let enterAmount = document.querySelector('.enter-amount')
-let containerDiv = document.querySelector('.container')
+let landingPage = document.querySelector('.landing-page')
+let slotContainerDiv = document.querySelector('.slot-container')
 let slotColumn1 = document.querySelector('.slot-column1')
 let slotColumn2 = document.querySelector('.slot-column2')
 let slotColumn3 = document.querySelector('.slot-column3')
@@ -46,32 +45,42 @@ var currency = 0;
 let totalPoints = 0;
 let lastBet = 0;
 
-twentyBtn.addEventListener('click', function() {
+
+playBtn.addEventListener('click', function() {
     console.log(`twenty was pressed!`)
     currency = 50;
     totalPointsDisplay.innerHTML = `Total ${currency}`;
     console.log(currency)
-    enterAmount.style.display = 'none';
-    containerDiv.style.display = 'inline';
+    landingPage.style.display = 'none';
+    slotContainerDiv.style.display = 'inline';
 } )
 
-fiftyBtn.addEventListener('click', function() {
-    console.log(`fifty was pressed!`)
-    currency = 100;
-    totalPointsDisplay.innerHTML = currency;
-    console.log(currency)
-    enterAmount.style.display = 'none';
-    containerDiv.style.display = 'inline'; 
-} )
+// twentyBtn.addEventListener('click', function() {
+//     console.log(`twenty was pressed!`)
+//     currency = 50;
+//     totalPointsDisplay.innerHTML = `Total ${currency}`;
+//     console.log(currency)
+//     landingPage.style.display = 'none';
+//     slotContainerDiv.style.display = 'inline';
+// } )
 
-hundBtn.addEventListener('click', function() {
-    console.log(`hundred was pressed!`)
-    currency = 150;
-    totalPointsDisplay.innerHTML = currency;
-    console.log(currency)
-    enterAmount.style.display = 'none';
-    containerDiv.style.display = 'inline';
-} )
+// fiftyBtn.addEventListener('click', function() {
+//     console.log(`fifty was pressed!`)
+//     currency = 100;
+//     totalPointsDisplay.innerHTML = currency;
+//     console.log(currency)
+//     landingPage.style.display = 'none';
+//     slotContainerDiv.style.display = 'inline'; 
+// } )
+
+// hundBtn.addEventListener('click', function() {
+//     console.log(`hundred was pressed!`)
+//     currency = 150;
+//     totalPointsDisplay.innerHTML = currency;
+//     console.log(currency)
+//     landingPage.style.display = 'none';
+//     slotContainerDiv.style.display = 'inline';
+// } )
 
 betOnebtn.addEventListener('click', function(){
     resetColor()
@@ -136,6 +145,7 @@ betThreebtn.addEventListener('click', function(){
     lastBetDisplay.innerHTML = `Last Bet ${lastBet}`
     totalPointsDisplay.style.color = 'green';
     lastWinDisplay.style.color = 'green';
+    
     lastBetDisplay.style.color = 'green';
     }, 3000);
     setTimeout(() => {
@@ -444,8 +454,8 @@ else currency -= 1
 function gameOver () {
     if (currency <= 0){
     console.log(`You Lost!`)
-    containerDiv.style.display = 'none';
-    enterAmount.style.display = 'flex';
+    slotContainerDiv.style.display = 'none';
+    landingPage.style.display = 'flex';
     document.querySelector('.amount-h1').innerHTML = 'Play Again?';
     currency = 0;
     }

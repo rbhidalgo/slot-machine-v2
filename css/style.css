@@ -2,68 +2,115 @@
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Anonymous Pro', monospace;
+    font-family: 'Copperplate';
+    font-weight: 300;
+    /* font-family: 'Anonymous Pro', monospace; */
+}
+
+html, body {
+    height: 100%;
+}
+
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+/***** Landing Page ******/
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.landing-page-top {
+    flex: 1;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}   
+
+.landing-page-bottom > h3{
+    margin-bottom: 2vh;
+    font-size: 18px;
+}
+
+.landing-page-bottom > a:link, a:visited {
+    color: #000000;
+  }
+
+.LOGO-Tagline {
+    width: 276px;
+    height: 308px;
+    object-fit: contain;
+  }
+
+.landing-page-top > h2 {
+    font-size: 32px;
+    text-align: center;
+    color: #000000;
+  }
+
+.play-button {
+    width: 250px;
+    height: 70px;
+    object-fit: contain;
+    background-color: #bb0308;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 32px;
 }
 
 body {
     /* background-color: antiquewhite; */
-    background: linear-gradient(179deg, #ffc100, #ffee00, #ff9400);
+    /* background: linear-gradient(179deg, #ffc100, #ffee00, #ff9400);
     background-size: 600% 600%;
-    animation: beer-background 3s ease infinite;
+    animation: beer-background 3s ease infinite; */
+    /* flex: 1; */
+    background-image: url(../photos/beerbackground-01.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    box-shadow: 1px 3px 15px -6px rgba(0,0,0,0.41);
+    /* animation: beer-background 20s infinite ease-in-out; */
+}
+/***** END Landing Page ******/
+
+
+/****** Slot Machine ******/
+
+/****** Heading ******/
+
+.heading {
+    text-align: center;
+    margin: 0 auto;
+    height: 7vh;
+    background-color: #003213;
+    display: flex;
+    flex-direction: row;
 }
 
-@keyframes beer-background { 
-    0%{background-position:0% 78%}
-    50%{background-position:100% 23%}
-    100%{background-position:0% 78%}
+.heading-left {
+
 }
 
-@keyframes winning-animation {
-    0% {background-color: rgb(0, 255, 55);}
-    50% {background-color: rgb(4, 121, 0);}
-    100% {background-color: rgb(0, 255, 55);}
+.heading-middle {
+    margin-top: 3vh;
 }
 
-@keyframes background-animation {
-    0% {background-color: green}
-    25% {background-color: blue}
-    50% {background-color: blueviolet}
-    75% {background-color: red}
-    100% {background-color: green}
+.heading-right {
+    align-self: center;
 }
 
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
+/****** END Heading ******/
 
-@keyframes fadeout {
-    from { opacity: 1; }
-    to   { opacity: 0; }
-}
-
-@keyframes cube-slot-ani { 
-    0% {
-        transform: translateZ(-100px) rotateX( -90deg); background-color: green;
-        /* top */
-    }
-    25% {
-        transform: translateZ(-100px) rotateY(-180deg); background-color: red;
-        /* back */
-    }
-    50% {
-        transform: translateZ(-100px) rotateX(  90deg); background-color: blue;
-        /* bottom */
-    }
-    75% {
-        transform: translateZ(-100px) rotateX( -90deg); background-color: yellow;
-        /* top */ 
-    }
-    100% {
-        transform: translateZ(-100px) rotateY(   0deg); background-color: green;
-        /* front */
-    }
-}
 
 h1 {
     font-family: 'Pirata One', cursive;
@@ -72,17 +119,17 @@ h1 {
     letter-spacing: 15px;
     text-transform: uppercase;
 }
+    /* 
+    h2 {
+        font-family: 'Pirata One', cursive;
+        font-size: 72px;
+        margin: 0 auto;
+    }
 
-h2 {
-    font-family: 'Pirata One', cursive;
-    font-size: 72px;
-    margin: 0 auto;
-}
-
-h3 {
-    font-family: 'Anonymous Pro', monospace;
-    font-size: 36px;
-}
+    h3 {
+        font-family: 'Anonymous Pro', monospace;
+        font-size: 36px;
+    } */
 
 .total, .last-win, .last-bet {
     font-size: 24px;
@@ -92,12 +139,6 @@ h3 {
 p {
     text-align: center;
     line-height: 30px;
-}
-
-.enter-amount {
-    display: flex;
-    flex-direction: column;
-    margin: 25px auto;
 }
 
 .btn-amount {
@@ -111,21 +152,24 @@ p {
     height: 100px;
 }
 
-.container {
+.slot-container {
     display: none;
     background-color: antiquewhite;
-    margin: 25px auto;
+    margin: 0 auto;
     animation-name: fadein;
-    animation-duration: 4s;
+    animation-duration: 2s;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: row;
     /* transition: height 350ms ease-out, opacity 750ms cubic-bezier(0, 0, 0.2, 1); */
 }
 
 .slots-background {
     border-radius: 50px;
-    animation-duration: 3s;
+    /* animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-delay: 1s;
-    animation-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);
+    animation-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1); */
 }
 
 .slots-row1, .slots-row2, .slots-row3 {
@@ -231,11 +275,6 @@ p {
     margin: 25px;
 }
 
-.heading {
-    text-align: center;
-    margin: 20px auto;
-}
-
 .slot-rows {
     display: flex;
     flex-direction: column;
@@ -246,7 +285,7 @@ p {
     background-size: cover;
     border-radius: 15px;
     box-shadow: 1px 3px 15px -6px rgba(0,0,0,0.41);
-    animation: beer-background 20s infinite ease-in-out;
+    /* animation: beer-background 20s infinite ease-in-out; */
 }
 
 .cube-animation {
@@ -317,4 +356,60 @@ p {
 .win-chart {
     height: 75px;
     width: 200px;
+}
+
+/****** END Slot Machine ******/
+
+/****** Animations ******/
+@keyframes beer-background { 
+    0%{background-position:0% 78%}
+    50%{background-position:100% 23%}
+    100%{background-position:0% 78%}
+}
+
+@keyframes winning-animation {
+    0% {background-color: rgb(0, 255, 55);}
+    50% {background-color: rgb(4, 121, 0);}
+    100% {background-color: rgb(0, 255, 55);}
+}
+
+@keyframes background-animation {
+    0% {background-color: green}
+    25% {background-color: blue}
+    50% {background-color: blueviolet}
+    75% {background-color: red}
+    100% {background-color: green}
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+@keyframes cube-slot-ani { 
+    0% {
+        transform: translateZ(-100px) rotateX( -90deg); background-color: green;
+        /* top */
+    }
+    25% {
+        transform: translateZ(-100px) rotateY(-180deg); background-color: red;
+        /* back */
+    }
+    50% {
+        transform: translateZ(-100px) rotateX(  90deg); background-color: blue;
+        /* bottom */
+    }
+    75% {
+        transform: translateZ(-100px) rotateX( -90deg); background-color: yellow;
+        /* top */ 
+    }
+    100% {
+        transform: translateZ(-100px) rotateY(   0deg); background-color: green;
+        /* front */
+    }
 }
