@@ -91,10 +91,14 @@ body {
 .heading {
     text-align: center;
     margin: 0 auto;
-    height: 80px;
+    height: 6vh;
     background-color: #003213;
     display: flex;
     flex-direction: row;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
 }
 
 .heading-left {
@@ -229,12 +233,10 @@ p {
     transform-style: preserve-3d;
     border-radius: 15px;
     }
-.bet-btns {
+.slot-footer {
     display: flex;
-    flex-direction: row;
-    padding: 25px 35%;
-    background-color: darkred;
-    height: 152px;
+    height: 10vh;
+    align-items: center;
 }
 
 .bet-one, .bet-three, .bet-five {
@@ -286,7 +288,8 @@ p {
     display: flex;
     flex-direction: row;
     flex: 1;
-    margin: 25px;
+    height: 84vh;
+    margin-top: 6vh;
 }
 
 .slot-rows {
