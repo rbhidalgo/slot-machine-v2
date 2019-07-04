@@ -91,22 +91,36 @@ body {
 .heading {
     text-align: center;
     margin: 0 auto;
-    height: 7vh;
+    height: 80px;
     background-color: #003213;
     display: flex;
     flex-direction: row;
 }
 
 .heading-left {
-
+    flex: 1;
+    border: rgb(217, 255, 0) 1px dotted;
 }
 
 .heading-middle {
-    margin-top: 3vh;
+    margin-top: 29px;
+    flex: 2;
+    border: rgb(217, 255, 0) 1px dotted;
 }
 
 .heading-right {
     align-self: center;
+    display: flex;
+    width: 25vw;
+    color: #fff;
+    border: rgb(217, 255, 0) 1px dotted;
+}
+
+.win-btn, .how-btn {
+    /* width: 245px; */
+    border: 1px #fff solid;
+    padding: 10px 15px;
+    border: 1px #fff solid;
 }
 
 /****** END Heading ******/
@@ -279,11 +293,12 @@ p {
     display: flex;
     flex-direction: column;
     flex: 1;
-    background-image: url(../photos/beerbackground-01.jpg);
-    background-repeat: no-repeat;
+    /* background-image: url(../photos/beerbackground-01.jpg); */
+    /* background-repeat: no-repeat;
     background-position: center top;
-    background-size: cover;
-    border-radius: 15px;
+    background-size: cover; */
+    /* border-radius: 15px; */
+    background-color: #252525;
     box-shadow: 1px 3px 15px -6px rgba(0,0,0,0.41);
     /* animation: beer-background 20s infinite ease-in-out; */
 }
