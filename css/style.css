@@ -172,7 +172,7 @@ p {
 
 .slot-container {
     display: none;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     margin: 0 auto;
     animation-name: fadein;
     animation-duration: 2s;
