@@ -234,11 +234,9 @@ p {
     border-radius: 15px;
     }
 .slot-footer {
-    /* display: flex;
-    flex-direction: row;
-    padding: 25px 35%;
-    background-color: darkred; */
+    display: flex;
     height: 10vh;
+    align-items: center;
 }
 
 .bet-one, .bet-three, .bet-five {
