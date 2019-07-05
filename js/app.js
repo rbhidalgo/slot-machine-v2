@@ -49,7 +49,7 @@ let lastBet = 0;
 playBtn.addEventListener('click', function() {
     console.log(`twenty was pressed!`)
     currency = 50;
-    totalPointsDisplay.innerHTML = `Total ${currency}`;
+    // totalPointsDisplay.innerHTML = `Total ${currency}`;
     console.log(currency)
     landingPage.style.display = 'none';
     slotContainerDiv.style.display = 'inline';

@@ -91,10 +91,14 @@ body {
 .heading {
     text-align: center;
     margin: 0 auto;
-    height: 80px;
+    height: 6vh;
     background-color: #003213;
     display: flex;
     flex-direction: row;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
 }
 
 .heading-left {
@@ -118,6 +122,7 @@ body {
     border: 1px #fff solid;
     padding: 10px 15px;
     border: 1px #fff solid;
+    margin: 0 1vw;
 }
 
 /****** END Heading ******/
@@ -136,7 +141,6 @@ h1 {
         font-size: 72px;
         margin: 0 auto;
     }
-
     h3 {
         font-family: 'Anonymous Pro', monospace;
         font-size: 36px;
@@ -165,7 +169,7 @@ p {
 
 .slot-container {
     display: none;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     margin: 0 auto;
     animation-name: fadein;
     animation-duration: 2s;
@@ -191,21 +195,21 @@ p {
 
 .winnings-column {
     /* background-color: blue; */
-    height: 600px;
+    /* height: 600px; */
     /* width: 300px; */
-    margin-top: 10px;
+    /* margin-top: 10px; */
     display: flex;
     flex: 1;
     flex-direction: column;
 }
 
-.status-column {
+.slot-lever {
     /* background-color: blue; */
     display: flex;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     flex: 1;
-    flex-direction: column;
-    height: 600px;
+    /* flex-direction: column;
+    height: 600px; */
     /* width: 300px; */
 }
 
@@ -226,12 +230,10 @@ p {
     transform-style: preserve-3d;
     border-radius: 15px;
     }
-.bet-btns {
+.slot-footer {
     display: flex;
-    flex-direction: row;
-    padding: 25px 35%;
-    background-color: darkred;
-    height: 152px;
+    height: 10vh;
+    align-items: center;
 }
 
 .bet-one, .bet-three, .bet-five {
@@ -283,20 +285,19 @@ p {
     display: flex;
     flex-direction: row;
     flex: 1;
-    margin: 25px;
+    height: 84vh;
+    margin-top: 6vh;
 }
 
 .slot-rows {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex: 3;
+    border-radius: 0 0 10px 10px;
     /* background-image: url(../photos/beerbackground-01.jpg); */
-    /* background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover; */
     /* border-radius: 15px; */
     background-color: #252525;
-    box-shadow: 1px 3px 15px -6px rgba(0,0,0,0.41);
+    /* box-shadow: 1px 3px 15px -6px rgba(0,0,0,0.41); */
     /* animation: beer-background 20s infinite ease-in-out; */
 }
 
