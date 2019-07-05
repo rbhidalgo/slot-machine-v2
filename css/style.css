@@ -357,8 +357,9 @@ p {
     /* margin: 5px auto; */
     text-align: center;
     background-color: #ffffff;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 5px;
+    border: #d59e29 4px solid;
+    border-radius: 5px;
 }
 
 .tagline {
@@ -372,7 +373,7 @@ p {
 
 .winnings, .bets, .credits {
     flex: 1;
-    margin: 0 1vw;
+    margin: 0 3vw;
     /* height: 60px;
     padding: 10px;
     text-align: center; */
