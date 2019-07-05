@@ -204,13 +204,14 @@ p {
 }
 
 .slot-lever {
-    /* background-color: blue; */
     display: flex;
-    /* margin-top: 10px; */
     flex: 1;
-    /* flex-direction: column;
-    height: 600px; */
-    /* width: 300px; */
+    align-items: center;
+}
+
+.slot-lever > img {
+    margin-right: 10vw;
+    height: 411px;
 }
 
 .slot-column1,
