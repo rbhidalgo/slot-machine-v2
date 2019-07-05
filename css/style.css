@@ -91,25 +91,19 @@ body {
 .heading {
     text-align: center;
     margin: 0 auto;
-    height: 6vh;
+    height: 80px;
     background-color: #003213;
     display: flex;
     flex-direction: row;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
 }
 
 .heading-left {
     flex: 1;
-    border: rgb(217, 255, 0) 1px dotted;
 }
 
 .heading-middle {
     margin-top: 29px;
     flex: 2;
-    border: rgb(217, 255, 0) 1px dotted;
 }
 
 .heading-right {
@@ -117,7 +111,6 @@ body {
     display: flex;
     width: 25vw;
     color: #fff;
-    border: rgb(217, 255, 0) 1px dotted;
 }
 
 .win-btn, .how-btn {
@@ -172,7 +165,7 @@ p {
 
 .slot-container {
     display: none;
-    /* background-color: antiquewhite; */
+    background-color: antiquewhite;
     margin: 0 auto;
     animation-name: fadein;
     animation-duration: 2s;
@@ -233,10 +226,12 @@ p {
     transform-style: preserve-3d;
     border-radius: 15px;
     }
-.slot-footer {
+.bet-btns {
     display: flex;
-    height: 10vh;
-    align-items: center;
+    flex-direction: row;
+    padding: 25px 35%;
+    background-color: darkred;
+    height: 152px;
 }
 
 .bet-one, .bet-three, .bet-five {
@@ -288,8 +283,7 @@ p {
     display: flex;
     flex-direction: row;
     flex: 1;
-    height: 84vh;
-    margin-top: 6vh;
+    margin: 25px;
 }
 
 .slot-rows {
