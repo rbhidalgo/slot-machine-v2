@@ -238,7 +238,7 @@ p {
 }
 
 .bet-one, .bet-three, .bet-five {
-    font-size: 24px;
+    /* font-size: 24px;
     text-align: center;
     text-decoration: none;
     outline: none;
@@ -249,7 +249,7 @@ p {
     box-shadow: 0 5px rgba(100, 100, 100, 0.219);
     width: 100px;
     height: 100px;
-    padding: 20px;
+    padding: 20px; */
 }
 
 .twenty, .fifty, .hundred {
@@ -281,6 +281,20 @@ p {
     transform: translateY(4px);
 }
 
+.center-slot-machine {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    border-radius: 0 0 10px 10px;
+    background-color: #252525;
+}
+
+.center-slot-machine-top {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vh;
+    width: 45vw;
+}
 
 .center-slots-columns {
     display: flex;
@@ -290,11 +304,11 @@ p {
     margin-top: 6vh;
 }
 
-.slot-rows {
+.center-slot-machine-middle {
     display: flex;
     flex-direction: column;
-    flex: 3;
-    border-radius: 0 0 10px 10px;
+    /* flex: 3; */
+    /* border-radius: 0 0 10px 10px; */
     /* background-image: url(../photos/beerbackground-01.jpg); */
     /* border-radius: 15px; */
     background-color: #252525;
@@ -340,9 +354,9 @@ p {
 
 .bet1, .bet3, .bet5,
 .total-points, .last-winning, .last-bet-made {
-    margin: 5px auto;
+    /* margin: 5px auto; */
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: #ffffff;
     padding: 10px;
     border-radius: 10px;
 }
@@ -356,10 +370,12 @@ p {
     background: linear-gradient(to right, rgba(217,142,4,0) 0%,rgba(255, 165, 0, 0.6) 25%,rgb(255, 165, 4) 50%,rgba(255, 165, 4, 0.6) 75%,rgba(217,142,4,0) 100%);
 }
 
-.winnings, .bets, .how-play {
-    height: 60px;
+.winnings, .bets, .credits {
+    flex: 1;
+    margin: 0 1vw;
+    /* height: 60px;
     padding: 10px;
-    text-align: center;
+    text-align: center; */
     /* background: linear-gradient(to right, rgba(217,142,4,0) 0%,rgba(255, 165, 0, 0.6) 25%,rgb(255, 165, 4) 50%,rgba(255, 165, 4, 0.6) 75%,rgba(217,142,4,0) 100%); */
 }
 
