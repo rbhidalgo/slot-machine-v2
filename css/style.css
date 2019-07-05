@@ -99,13 +99,11 @@ body {
 
 .heading-left {
     flex: 1;
-    border: rgb(217, 255, 0) 1px dotted;
 }
 
 .heading-middle {
     margin-top: 29px;
     flex: 2;
-    border: rgb(217, 255, 0) 1px dotted;
 }
 
 .heading-right {
@@ -113,7 +111,6 @@ body {
     display: flex;
     width: 25vw;
     color: #fff;
-    border: rgb(217, 255, 0) 1px dotted;
 }
 
 .win-btn, .how-btn {
