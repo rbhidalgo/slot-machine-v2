@@ -151,10 +151,10 @@ h1 {
     padding: 10px;
 }
 
-p {
+/* p {
     text-align: center;
     line-height: 30px;
-}
+} */
 
 .btn-amount {
     display: flex;
@@ -296,6 +296,12 @@ p {
     width: 45vw;
 }
 
+.bets > h3, .winnings > h3, .credits > h3 {
+    font-size: 18px;
+    text-align: center;
+    color: #ffffff;
+}
+
 .center-slots-columns {
     display: flex;
     flex-direction: row;
@@ -357,6 +363,7 @@ p {
     /* margin: 5px auto; */
     text-align: center;
     background-color: #ffffff;
+    color: #000;
     padding: 5px;
     border: #d59e29 4px solid;
     border-radius: 5px;
