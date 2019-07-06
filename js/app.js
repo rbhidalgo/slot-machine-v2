@@ -192,15 +192,15 @@ betFivebtn.addEventListener('click', function(){
 })
 
 function resetColor () {
-    slotColumn1.style.backgroundColor = 'rgba(189, 191, 193, 0.8)';
-    slotColumn2.style.backgroundColor = 'rgba(189, 191, 193, 0.8)';
-    slotColumn3.style.backgroundColor = 'rgba(189, 191, 193, 0.8)';
-    slotColumn4.style.backgroundColor = 'rgba(189, 191, 193, 0.8)';
-    slotColumn5.style.backgroundColor = 'rgba(189, 191, 193, 0.8)';
-    slotColumn6.style.backgroundColor = 'rgba(189, 191, 193, 0.8)';
-    slotColumn7.style.backgroundColor = 'rgba(189, 191, 193, 0.8)';
-    slotColumn8.style.backgroundColor = 'rgba(189, 191, 193, 0.8)';
-    slotColumn9.style.backgroundColor = 'rgba(189, 191, 193, 0.8)';
+    slotColumn1.style.backgroundColor = '#ffffff';
+    slotColumn2.style.backgroundColor = '#ffffff';
+    slotColumn3.style.backgroundColor = '#ffffff';
+    slotColumn4.style.backgroundColor = '#ffffff';
+    slotColumn5.style.backgroundColor = '#ffffff';
+    slotColumn6.style.backgroundColor = '#ffffff';
+    slotColumn7.style.backgroundColor = '#ffffff';
+    slotColumn8.style.backgroundColor = '#ffffff';
+    slotColumn9.style.backgroundColor = '#ffffff';
 }
 
 function resetAnimation () {
