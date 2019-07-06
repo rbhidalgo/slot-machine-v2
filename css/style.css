@@ -243,18 +243,15 @@ h1 {
 }
 
 .bet-one, .bet-three, .bet-five {
-    /* font-size: 24px;
     text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: black;
-    background-color: orange;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 5px rgba(100, 100, 100, 0.219);
-    width: 100px;
-    height: 100px;
-    padding: 20px; */
+    background-color: #ffffff;
+    color: #000;
+    flex: 1;
+    padding: 1vh 1vw;
+    border: #d59e29 4px solid;
+    /* border-radius: 5px; */
+    margin: 0 2vh;
+    font-size: 20px;
 }
 
 .twenty, .fifty, .hundred {
@@ -297,9 +294,9 @@ h1 {
 .center-slot-machine-top {
     display: flex;
     flex-direction: row;
-    margin-top: 5vh;
+    margin-top: 3vh;
     width: 45vw;
-    height: 9vh;
+    height: 10vh;
 }
 
 .bets > h3, .winnings > h3, .credits > h3 {
@@ -325,7 +322,7 @@ h1 {
     /* flex: 3; */
     /* align-items: center; */
     width: 50vw;
-    height: 55vh;
+    height: 78vh;
     border: #d59e29 6px solid;
     /* border-radius: 0 0 10px 10px; */
     /* background-image: url(../photos/beerbackground-01.jpg); */
@@ -333,6 +330,26 @@ h1 {
     background-color: #252525;
     /* box-shadow: 1px 3px 15px -6px rgba(0,0,0,0.41); */
     /* animation: beer-background 20s infinite ease-in-out; */
+}
+
+.center-slot-machine-bottom {
+    display: flex;
+    width: 50vw;
+    height: 12vh;
+    align-items: center;
+}
+
+.add-credit {
+    flex: 3;
+    text-align: center;
+    background-color: #016d29;
+    color: #ffffff;
+    /* flex: 1; */
+    padding: 1vh 1vw;
+    /* border: #d59e29 4px solid; */
+    /* border-radius: 5px; */
+    margin: 0 2vh;
+    font-size: 20px;
 }
 
 .cube-animation {
