@@ -1,8 +1,8 @@
-const beerSlot1Photos = ['photos/artboard1.png','photos/artboard2.png', 'photos/artboard3.png', 
-    'photos/artboard4.png','photos/artboard5.png', 'photos/artboard6.png']
+const beerSlot1Photos = ['photos/slot-icons/beer-icons-1.png','photos/slot-icons/beer-icons-2.png', 'photos/slot-icons/beer-icons-3.png', 
+    'photos/slot-icons/beer-icons-4.png','photos/slot-icons/beer-icons-5.png', 'photos/slot-icons/beer-icons-6.png']
 
-const beerSlot2Photos = ['photos/artboard11.png','photos/artboard22.png', 'photos/artboard33.png', 
-'photos/artboard44.png','photos/artboard55.png', 'photos/artboard66.png']
+const beerSlot2Photos = ['photos/slot-icons/beer-icons-1.png','photos/slot-icons/beer-icons-2.png', 'photos/slot-icons/beer-icons-3.png', 
+'photos/slot-icons/beer-icons-4.png','photos/slot-icons/beer-icons-5.png', 'photos/slot-icons/beer-icons-6.png']
 
 let row1Column1Photo = document.querySelector('.row1-col1-cube1-photo')
 let row1Column2Photo = document.querySelector('.row1-col2-cube1-photo')
@@ -49,7 +49,7 @@ let lastBet = 0;
 playBtn.addEventListener('click', function() {
     console.log(`twenty was pressed!`)
     currency = 50;
-    totalPointsDisplay.innerHTML = `Total ${currency}`;
+    // totalPointsDisplay.innerHTML = `Total ${currency}`;
     console.log(currency)
     landingPage.style.display = 'none';
     slotContainerDiv.style.display = 'inline';
@@ -192,15 +192,15 @@ betFivebtn.addEventListener('click', function(){
 })
 
 function resetColor () {
-    slotColumn1.style.backgroundColor = 'rgba(189, 191, 193, 0.8)';
-    slotColumn2.style.backgroundColor = 'rgba(189, 191, 193, 0.8)';
-    slotColumn3.style.backgroundColor = 'rgba(189, 191, 193, 0.8)';
-    slotColumn4.style.backgroundColor = 'rgba(189, 191, 193, 0.8)';
-    slotColumn5.style.backgroundColor = 'rgba(189, 191, 193, 0.8)';
-    slotColumn6.style.backgroundColor = 'rgba(189, 191, 193, 0.8)';
-    slotColumn7.style.backgroundColor = 'rgba(189, 191, 193, 0.8)';
-    slotColumn8.style.backgroundColor = 'rgba(189, 191, 193, 0.8)';
-    slotColumn9.style.backgroundColor = 'rgba(189, 191, 193, 0.8)';
+    slotColumn1.style.backgroundColor = '#ffffff';
+    slotColumn2.style.backgroundColor = '#ffffff';
+    slotColumn3.style.backgroundColor = '#ffffff';
+    slotColumn4.style.backgroundColor = '#ffffff';
+    slotColumn5.style.backgroundColor = '#ffffff';
+    slotColumn6.style.backgroundColor = '#ffffff';
+    slotColumn7.style.backgroundColor = '#ffffff';
+    slotColumn8.style.backgroundColor = '#ffffff';
+    slotColumn9.style.backgroundColor = '#ffffff';
 }
 
 function resetAnimation () {

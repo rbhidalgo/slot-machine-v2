@@ -103,13 +103,11 @@ body {
 
 .heading-left {
     flex: 1;
-    border: rgb(217, 255, 0) 1px dotted;
 }
 
 .heading-middle {
     margin-top: 29px;
     flex: 2;
-    border: rgb(217, 255, 0) 1px dotted;
 }
 
 .heading-right {
@@ -117,7 +115,6 @@ body {
     display: flex;
     width: 25vw;
     color: #fff;
-    border: rgb(217, 255, 0) 1px dotted;
 }
 
 .win-btn, .how-btn {
@@ -125,6 +122,7 @@ body {
     border: 1px #fff solid;
     padding: 10px 15px;
     border: 1px #fff solid;
+    margin: 0 1vw;
 }
 
 /****** END Heading ******/
@@ -143,7 +141,6 @@ h1 {
         font-size: 72px;
         margin: 0 auto;
     }
-
     h3 {
         font-family: 'Anonymous Pro', monospace;
         font-size: 36px;
@@ -154,10 +151,10 @@ h1 {
     padding: 10px;
 }
 
-p {
+/* p {
     text-align: center;
     line-height: 30px;
-}
+} */
 
 .btn-amount {
     display: flex;
@@ -166,13 +163,13 @@ p {
 }
 
 .imgcube {
-    width: 50px;
-    height: 100px;
+    /* width: 50px;
+    height: 100px; */
 }
 
 .slot-container {
     display: none;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     margin: 0 auto;
     animation-name: fadein;
     animation-duration: 2s;
@@ -192,28 +189,33 @@ p {
 
 .slots-row1, .slots-row2, .slots-row3 {
     display: flex;
+    flex: 1;
+    flex-direction: row;
+    width: 45vw;
+    /* height: 2vh; */
     /* margin: 25px; */
-    margin-top: 40px;
+    /* margin-top: 40px; */
 }
 
 .winnings-column {
     /* background-color: blue; */
-    height: 600px;
+    /* height: 600px; */
     /* width: 300px; */
-    margin-top: 10px;
+    /* margin-top: 10px; */
     display: flex;
     flex: 1;
     flex-direction: column;
 }
 
-.status-column {
-    /* background-color: blue; */
+.slot-lever {
     display: flex;
-    margin-top: 10px;
     flex: 1;
-    flex-direction: column;
-    height: 600px;
-    /* width: 300px; */
+    align-items: center;
+}
+
+.slot-lever > img {
+    margin-right: 10vw;
+    height: 411px;
 }
 
 .slot-column1,
@@ -225,13 +227,14 @@ p {
 .slot-column7,
 .slot-column8,
 .slot-column9 {
-    padding: 25px;
-    height: 150px;
-    width: 100px;
-    margin: 0 20px;
-    background-color: rgba(189, 191, 193, 0.8);
+    flex: 1;
+    /* width: 100px; */
+    /* margin: 0 20px; */
+    margin: 1vh 1vw;
+    background-color: #ffffff;
+    border: #686868 4px solid;
     transform-style: preserve-3d;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     }
 .slot-footer {
     display: flex;
@@ -240,18 +243,15 @@ p {
 }
 
 .bet-one, .bet-three, .bet-five {
-    font-size: 24px;
     text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: black;
-    background-color: orange;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 5px rgba(100, 100, 100, 0.219);
-    width: 100px;
-    height: 100px;
-    padding: 20px;
+    background-color: #ffffff;
+    color: #000;
+    flex: 1;
+    padding: 1vh 1vw;
+    border: #d59e29 4px solid;
+    /* border-radius: 5px; */
+    margin: 0 2vh;
+    font-size: 20px;
 }
 
 .twenty, .fifty, .hundred {
@@ -283,6 +283,28 @@ p {
     transform: translateY(4px);
 }
 
+.center-slot-machine {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    border-radius: 0 0 10px 10px;
+    background-color: #252525;
+}
+
+.center-slot-machine-top {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3vh;
+    width: 45vw;
+    height: 10vh;
+}
+
+.bets > h3, .winnings > h3, .credits > h3 {
+    font-size: 18px;
+    text-align: center;
+    color: #ffffff;
+    line-height: 35px;
+}
 
 .center-slots-columns {
     display: flex;
@@ -292,18 +314,42 @@ p {
     margin-top: 6vh;
 }
 
-.slot-rows {
+.center-slot-machine-middle {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    padding: 2vh;
+    align-content: center;
+    /* flex: 3; */
+    /* align-items: center; */
+    width: 50vw;
+    height: 78vh;
+    border: #d59e29 6px solid;
+    /* border-radius: 0 0 10px 10px; */
     /* background-image: url(../photos/beerbackground-01.jpg); */
-    /* background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover; */
-    /* border-radius: 15px; */
+    border-radius: 15px;
     background-color: #252525;
-    box-shadow: 1px 3px 15px -6px rgba(0,0,0,0.41);
+    /* box-shadow: 1px 3px 15px -6px rgba(0,0,0,0.41); */
     /* animation: beer-background 20s infinite ease-in-out; */
+}
+
+.center-slot-machine-bottom {
+    display: flex;
+    width: 50vw;
+    height: 12vh;
+    align-items: center;
+}
+
+.add-credit {
+    flex: 3;
+    text-align: center;
+    background-color: #016d29;
+    color: #ffffff;
+    /* flex: 1; */
+    padding: 1vh 1vw;
+    /* border: #d59e29 4px solid; */
+    /* border-radius: 5px; */
+    margin: 0 2vh;
+    font-size: 20px;
 }
 
 .cube-animation {
@@ -336,19 +382,31 @@ p {
 .cube-face-bottom { transform: rotateX(-90deg) translateZ(100px); }
 
 .cube-column1 {
-    width: 100%;
-    height: 100%;
+    /* width: 100%; */
+    /* height: 100%; */
     position: relative;
     transform-style: preserve-3d;
+    top: 20%;
+    /* display: flex; */
+    left: 25%;
+    align-items: center;
+    /* margin: 0 auto; */
+}
+
+.cube-face img {
+    display: block;
+margin: 0 auto;
 }
 
 .bet1, .bet3, .bet5,
 .total-points, .last-winning, .last-bet-made {
-    margin: 5px auto;
+    /* margin: 5px auto; */
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.3);
-    padding: 10px;
-    border-radius: 10px;
+    background-color: #ffffff;
+    color: #000;
+    padding: 5px;
+    border: #d59e29 4px solid;
+    border-radius: 5px;
 }
 
 .tagline {
@@ -360,10 +418,12 @@ p {
     background: linear-gradient(to right, rgba(217,142,4,0) 0%,rgba(255, 165, 0, 0.6) 25%,rgb(255, 165, 4) 50%,rgba(255, 165, 4, 0.6) 75%,rgba(217,142,4,0) 100%);
 }
 
-.winnings, .bets, .how-play {
-    height: 60px;
+.winnings, .bets, .credits {
+    flex: 1;
+    margin: 0 3vw;
+    /* height: 60px;
     padding: 10px;
-    text-align: center;
+    text-align: center; */
     /* background: linear-gradient(to right, rgba(217,142,4,0) 0%,rgba(255, 165, 0, 0.6) 25%,rgb(255, 165, 4) 50%,rgba(255, 165, 4, 0.6) 75%,rgba(217,142,4,0) 100%); */
 }
 
