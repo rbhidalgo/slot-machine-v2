@@ -167,6 +167,10 @@ h1 {
     height: 100px; */
 }
 
+.cube-column1 img {
+    height: 7vh;
+}
+
 .slot-container {
     display: none;
     /* background-color: antiquewhite; */
