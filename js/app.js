@@ -1,8 +1,8 @@
-const beerSlot1Photos = ['photos/artboard1.png','photos/artboard2.png', 'photos/artboard3.png', 
-    'photos/artboard4.png','photos/artboard5.png', 'photos/artboard6.png']
+const beerSlot1Photos = ['photos/slot-icons/beer-icons-1.png','photos/slot-icons/beer-icons-2.png', 'photos/slot-icons/beer-icons-3.png', 
+    'photos/slot-icons/beer-icons-4.png','photos/slot-icons/beer-icons-5.png', 'photos/slot-icons/beer-icons-6.png']
 
-const beerSlot2Photos = ['photos/artboard11.png','photos/artboard22.png', 'photos/artboard33.png', 
-'photos/artboard44.png','photos/artboard55.png', 'photos/artboard66.png']
+const beerSlot2Photos = ['photos/slot-icons/beer-icons-1.png','photos/slot-icons/beer-icons-2.png', 'photos/slot-icons/beer-icons-3.png', 
+'photos/slot-icons/beer-icons-4.png','photos/slot-icons/beer-icons-5.png', 'photos/slot-icons/beer-icons-6.png']
 
 let row1Column1Photo = document.querySelector('.row1-col1-cube1-photo')
 let row1Column2Photo = document.querySelector('.row1-col2-cube1-photo')
