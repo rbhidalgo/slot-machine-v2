@@ -38,19 +38,17 @@ let spinSoundEff = document.querySelector('.spin-sound')
 let winSoundEff = document.querySelector('.win-sound')
 let bet3Icons = document.querySelector('.bet3')
 let bet5Icons = document.querySelector('.bet5')
-let totalPointsDisplay = document.querySelector('.total')
-let lastWinDisplay = document.querySelector('.last-win')
-let lastBetDisplay = document.querySelector('.last-bet')
-var currency = 0;
+let totalPointsDisplay = document.querySelector('.total-points')
+let lastWinDisplay = document.querySelector('.last-winning')
+let lastBetDisplay = document.querySelector('.last-bet-made')
+let currency = 0;
 let totalPoints = 0;
 let lastBet = 0;
 
 
 playBtn.addEventListener('click', function() {
-    console.log(`twenty was pressed!`)
-    currency = 50;
-    // totalPointsDisplay.innerHTML = `Total ${currency}`;
-    console.log(currency)
+    // currency = 50;
+    totalPointsDisplay.innerHTML = `$${currency}.00`;
     landingPage.style.display = 'none';
     slotContainerDiv.style.display = 'inline';
 } )
@@ -104,9 +102,9 @@ betOnebtn.addEventListener('click', function(){
     photoGenerate()
     resetAnimation()
     setTimeout(() => {
-    totalPointsDisplay.innerHTML = `Total ${currency}`;
-    lastWinDisplay.innerHTML = `Total Wins ${totalPoints}`;
-    lastBetDisplay.innerHTML = `Last Bet ${lastBet}`
+    totalPointsDisplay.innerHTML = `$${currency}.00`;
+    lastWinDisplay.innerHTML = `$${totalPoints}.00`;
+    lastBetDisplay.innerHTML = `$${lastBet}.00`
     totalPointsDisplay.style.color = 'green';
     lastWinDisplay.style.color = 'green';
     lastBetDisplay.style.color = 'green';
@@ -140,9 +138,9 @@ betThreebtn.addEventListener('click', function(){
     photoGenerate()
     resetAnimation()
     setTimeout(() => {
-    totalPointsDisplay.innerHTML = `Total ${currency}`;
-    lastWinDisplay.innerHTML = `Total Wins ${totalPoints}`;
-    lastBetDisplay.innerHTML = `Last Bet ${lastBet}`
+    totalPointsDisplay.innerHTML = `$${currency}.00`;
+    lastWinDisplay.innerHTML = `$${totalPoints}.00`;
+    lastBetDisplay.innerHTML = `$${lastBet}.00`
     totalPointsDisplay.style.color = 'green';
     lastWinDisplay.style.color = 'green';
     
@@ -177,9 +175,9 @@ betFivebtn.addEventListener('click', function(){
     photoGenerate()
     resetAnimation()
     setTimeout(() => {
-    totalPointsDisplay.innerHTML = `Total ${currency}`;
-    lastWinDisplay.innerHTML = `Total Wins ${totalPoints}`;
-    lastBetDisplay.innerHTML = `Last Bet ${lastBet}`
+    totalPointsDisplay.innerHTML = `$${currency}.00`;
+    lastWinDisplay.innerHTML = `$${totalPoints}.00`;
+    lastBetDisplay.innerHTML = `$${lastBet}.00`
     totalPointsDisplay.style.color = 'green';
     lastWinDisplay.style.color = 'green';
     lastBetDisplay.style.color = 'green';
