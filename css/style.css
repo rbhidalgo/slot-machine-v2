@@ -91,7 +91,7 @@ body {
 .heading {
     text-align: center;
     margin: 0 auto;
-    height: 6vh;
+    height: 7vh;
     background-color: #003213;
     display: flex;
     flex-direction: row;
