@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: 'Copperplate';
     font-weight: 300;
-    /* font-family: 'Anonymous Pro', monospace; */
 }
 
 html, body {
@@ -69,17 +68,11 @@ html, body {
 }
 
 body {
-    /* background-color: antiquewhite; */
-    /* background: linear-gradient(179deg, #ffc100, #ffee00, #ff9400);
-    background-size: 600% 600%;
-    animation: beer-background 3s ease infinite; */
-    /* flex: 1; */
     background-image: url(../photos/beerbackground-01.jpg);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
     box-shadow: 1px 3px 15px -6px rgba(0,0,0,0.41);
-    /* animation: beer-background 20s infinite ease-in-out; */
 }
 /***** END Landing Page ******/
 
@@ -118,7 +111,6 @@ body {
 }
 
 .win-btn, .how-btn {
-    /* width: 245px; */
     border: 1px #fff solid;
     padding: 10px 15px;
     border: 1px #fff solid;
@@ -136,26 +128,11 @@ h1 {
     letter-spacing: 15px;
     text-transform: uppercase;
 }
-    /* 
-    h2 {
-        font-family: 'Pirata One', cursive;
-        font-size: 72px;
-        margin: 0 auto;
-    }
-    h3 {
-        font-family: 'Anonymous Pro', monospace;
-        font-size: 36px;
-    } */
 
 .total, .last-win, .last-bet {
     font-size: 24px;
     padding: 10px;
 }
-
-/* p {
-    text-align: center;
-    line-height: 30px;
-} */
 
 .btn-amount {
     display: flex;
@@ -174,22 +151,16 @@ h1 {
 
 .slot-container {
     display: none;
-    /* background-color: antiquewhite; */
     margin: 0 auto;
     animation-name: fadein;
     animation-duration: 2s;
     height: 100vh;
     width: 100vw;
     flex-direction: row;
-    /* transition: height 350ms ease-out, opacity 750ms cubic-bezier(0, 0, 0.2, 1); */
 }
 
 .slots-background {
     border-radius: 50px;
-    /* animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-delay: 1s;
-    animation-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1); */
 }
 
 .slots-row1, .slots-row2, .slots-row3 {
@@ -197,16 +168,9 @@ h1 {
     flex: 1;
     flex-direction: row;
     width: 45vw;
-    /* height: 2vh; */
-    /* margin: 25px; */
-    /* margin-top: 40px; */
 }
 
 .winnings-column {
-    /* background-color: blue; */
-    /* height: 600px; */
-    /* width: 300px; */
-    /* margin-top: 10px; */
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -234,15 +198,10 @@ h1 {
 .slot-column8,
 .slot-column9 {
     flex: 1;
-    /* width: 100px; */
-    /* margin: 0 20px; */
     margin: 1vh 1vw;
     background-color: #ffffff;
     border: #686868 4px solid;
-    /* transform-style: preserve-3d; */
-    /* border-radius: 15px; */
     align-items: center;
-    /* align-content: center; */
     display: flex;
     }
 .slot-footer {
@@ -258,7 +217,6 @@ h1 {
     flex: 1;
     padding: 1vh 1vw;
     border: #d59e29 4px solid;
-    /* border-radius: 5px; */
     margin: 0 2vh;
     font-size: 20px;
     cursor: pointer;
@@ -329,17 +287,11 @@ h1 {
     flex-direction: column;
     padding: 2vh;
     align-content: center;
-    /* flex: 3; */
-    /* align-items: center; */
     width: 50vw;
     height: 78vh;
     border: #d59e29 6px solid;
-    /* border-radius: 0 0 10px 10px; */
-    /* background-image: url(../photos/beerbackground-01.jpg); */
     border-radius: 15px;
     background-color: #252525;
-    /* box-shadow: 1px 3px 15px -6px rgba(0,0,0,0.41); */
-    /* animation: beer-background 20s infinite ease-in-out; */
 }
 
 .center-slot-machine-bottom {
@@ -354,10 +306,7 @@ h1 {
     text-align: center;
     background-color: #016d29;
     color: #ffffff;
-    /* flex: 1; */
     padding: 1vh 1vw;
-    /* border: #d59e29 4px solid; */
-    /* border-radius: 5px; */
     margin: 0 2vh;
     font-size: 20px;
     cursor: pointer;
