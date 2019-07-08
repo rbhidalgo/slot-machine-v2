@@ -47,10 +47,8 @@ let lastBet = 0;
 
 
 playBtn.addEventListener('click', function() {
-    console.log(`twenty was pressed!`)
-    currency = 50;
+    // currency = 50;
     totalPointsDisplay.innerHTML = `$${currency}.00`;
-    console.log(currency)
     landingPage.style.display = 'none';
     slotContainerDiv.style.display = 'inline';
 } )
