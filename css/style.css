@@ -183,8 +183,9 @@ h1 {
 }
 
 .slot-lever > img {
-    margin-right: 10vw;
-    height: 411px;
+    margin-right: 13vw;
+    /* height: 411px; */
+    height: 32vh;
     cursor: pointer;
 }
 
