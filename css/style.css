@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Copperplate';
     font-weight: 300;
+    font-size: 1rem;
 }
 
 html, body {
@@ -15,7 +16,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: 100vh;
     flex-direction: column;
 }
 
@@ -35,7 +36,7 @@ html, body {
 
 .landing-page-bottom > h3{
     margin-bottom: 2vh;
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 .landing-page-bottom > a:link, a:visited {
@@ -49,7 +50,7 @@ html, body {
   }
 
 .landing-page-top > h2 {
-    font-size: 32px;
+    font-size: 2rem;
     text-align: center;
     color: #000000;
   }
@@ -64,7 +65,7 @@ html, body {
     margin-top: 30px;
     border: none;
     cursor: pointer;
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 body {
@@ -123,14 +124,14 @@ body {
 
 h1 {
     font-family: 'Pirata One', cursive;
-    font-size: 120px;
+    font-size: 6.6rem;
     margin: 0 auto;
     letter-spacing: 15px;
     text-transform: uppercase;
 }
 
 .total, .last-win, .last-bet {
-    font-size: 24px;
+    font-size: 1.5rem;
     padding: 10px;
 }
 
@@ -184,7 +185,6 @@ h1 {
 
 .slot-lever > img {
     margin-right: 13vw;
-    /* height: 411px; */
     height: 32vh;
     cursor: pointer;
 }
@@ -219,7 +219,7 @@ h1 {
     padding: 1vh 1vw;
     border: #d59e29 4px solid;
     margin: 0 2vh;
-    font-size: 20px;
+    font-size: 1.5rem;
     cursor: pointer;
 }
 
@@ -228,7 +228,7 @@ h1 {
     display: flex;
     flex-flow: row;
     padding: 15px 25px;
-    font-size: 24px;
+    font-size: 1.5rem;
     text-align: center;
     text-decoration: none;
     outline: none;
@@ -269,7 +269,7 @@ h1 {
 }
 
 .bets > h3, .winnings > h3, .credits > h3 {
-    font-size: 18px;
+    font-size: 1rem;
     text-align: center;
     color: #ffffff;
     line-height: 35px;
@@ -309,7 +309,7 @@ h1 {
     color: #ffffff;
     padding: 1vh 1vw;
     margin: 0 2vh;
-    font-size: 20px;
+    font-size: 1.5rem;
     cursor: pointer;
 }
 
