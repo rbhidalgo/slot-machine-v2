@@ -44,6 +44,8 @@ let lastBetDisplay = document.querySelector('.last-bet-made')
 let currency = 0;
 let totalPoints = 0;
 let lastBet = 0;
+let howBtn = document.querySelector('.how-btn');
+let headingRight = document.querySelector('.heading-right');
 
 
 playBtn.addEventListener('click', function() {
@@ -52,6 +54,12 @@ playBtn.addEventListener('click', function() {
     landingPage.style.display = 'none';
     slotContainerDiv.style.display = 'inline';
 } )
+
+const winAndHowBtn = (e) => {
+    console.log(`click on ${e.target.id}`)
+}
+
+headingRight.addEventListener('click', winAndHowBtn)
 
 // twentyBtn.addEventListener('click', function() {
 //     console.log(`twenty was pressed!`)
