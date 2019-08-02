@@ -25,6 +25,7 @@ html, body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    display: none;
 }
 
 .landing-page-top {
@@ -95,7 +96,7 @@ body {
     width: 100vw;
 }
 
-.heading-left {ƒ
+.heading-left {
     flex: 1;
 }
 
@@ -451,4 +452,15 @@ margin: 0 auto;
         transform: translateZ(-100px) rotateY(   0deg); background-color: green;
         /* front */
     }
+}
+
+.how-to-wins-btns {
+    height: 100vh;
+    width: 100vw;
+    background-color: #00000063;
+}
+
+.how-to-win-div > img,
+.winnings-div > img {
+    width: 60vw;
 }

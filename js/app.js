@@ -55,8 +55,14 @@ playBtn.addEventListener('click', function() {
     slotContainerDiv.style.display = 'inline';
 } )
 
-const winAndHowBtn = (e) => {
-    console.log(`click on ${e.target.id}`)
+const winAndHowBtn = e => {
+    console.log('click on', e.target.className)
+    if(e.target.className === 'how-btn'){
+    const howToDiv = document.createElement('div')
+    console.log(howToDiv)
+} else {
+    console.log('not working')
+}
 }
 
 headingRight.addEventListener('click', winAndHowBtn)
