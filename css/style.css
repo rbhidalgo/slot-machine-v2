@@ -25,6 +25,7 @@ html, body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    /* display: none; */
 }
 
 .landing-page-top {
@@ -100,7 +101,7 @@ body {
 }
 
 .heading-middle {
-    margin-top: 3.5vh;
+    margin-top: 3vh;
     flex: 2;
 }
 
@@ -452,3 +453,103 @@ margin: 0 auto;
         /* front */
     }
 }
+
+/* .how-to-wins-modals {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.74);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+} */
+
+/* .how-to-win-div > img,
+.winnings-div > img {
+    width: 60vw;
+}
+
+.how-to-win-div {
+    flex: 1;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;   
+    /* display: none; */
+/* } */
+
+/* .winnings-div {
+    height: 100vh;
+    display: none;
+} */
+
+/* .close-btn-play {
+    position: absolute; */
+    /* background-image: url(../photos/close-x.png); */
+    /* max-width: 2vw; */
+    /* z-index: 5; */
+    /* width: 40px;
+    height: 40px; */
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: cover;
+    background-size: cover; */
+    /* margin: 0 auto; */
+    /* top: 1vh; */
+    /* right: 2vw; */
+    /* bottom: 65vh; */
+    /* top: 32vh;
+    cursor: pointer; */
+/* } */ 
+
+.how-to-win-modal,
+.winnings-modal {
+    /* display: none;  */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+}
+
+.win-modal-content,
+.winnings-modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    /* border: 1px solid #888; */
+    width: 80%;
+    border-radius: 15px;
+}
+
+.close-win,
+.close-how {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .win-modal-content > img,
+  .winnings-modal-content > img {
+    width: 75vw;
+  }
+
+  .visible {
+      visibility: visible;
+      opacity: 1;
+      transform: scale(1.0);
+      transition: opacity 0.25s ease, transform 0.25s ease;
+  }
+
+  /* .how-to-win-modal {
+      display: none;
+  } */
