@@ -539,6 +539,7 @@ margin: 0 auto;
     width: 75vw;
     height: 60vh;
     border-radius: 15px;
+    justify-content: center;
 }
 
 .add-credit-title {
@@ -557,8 +558,8 @@ margin: 0 auto;
 .amount-fifty > img,
 .amount-hundred > img,
 .amount-hundred-fifty > img {
-    width: 15vw;
-    padding: 1vh 1vw;
+    width: 20vw;
+    padding: 4vh 1vw;
 }
 
 .close-win,
