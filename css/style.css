@@ -534,7 +534,7 @@ margin: 0 auto;
 .add-credit-content {
     display: flex;
     flex-direction: column;
-    background-image: url(../photos/choose-amount-bkg.png);
+    background-image: url(../photos/choose-amount-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 75vw;
