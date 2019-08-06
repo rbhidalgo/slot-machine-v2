@@ -50,7 +50,8 @@ html, body {
     object-fit: contain;
   }
 
-.landing-page-top > h2 {
+.landing-page-top > h2,
+.add-credit-title > h2 {
     font-size: 2rem;
     text-align: center;
     color: #000000;
