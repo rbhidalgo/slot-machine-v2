@@ -536,6 +536,8 @@ margin: 0 auto;
     background-image: url(../photos/choose-amount-bkg.png);
     background-size: cover;
     background-repeat: no-repeat;
+    width: 75vw;
+    border-radius: 15px;
 }
 
 .amount-container-icons {
