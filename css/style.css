@@ -502,7 +502,8 @@ margin: 0 auto;
 /* } */ 
 
 .how-to-win-modal,
-.winnings-modal {
+.winnings-modal,
+.add-credit-modal {
     /* display: none;  */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -525,12 +526,25 @@ margin: 0 auto;
     margin: auto;
     padding: 20px;
     /* border: 1px solid #888; */
-    width: 80%;
+    width: 80vw;
     border-radius: 15px;
 }
 
+.add-credit-content {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../photos/choose-amount-bkg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.amount-container-icons {
+    display: flex;
+    flex-direction: row;
+}
+
 .close-win,
-.close-how {
+.close-how   {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
