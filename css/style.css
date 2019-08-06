@@ -545,6 +545,12 @@ margin: 0 auto;
     flex-direction: row;
 }
 
+.amount-fifty > img,
+.amount-hundred > img,
+.amount-hundred-fifty > img, {
+    width: 15vw;
+}
+
 .close-win,
 .close-how   {
     color: #aaaaaa;
