@@ -541,6 +541,14 @@ margin: 0 auto;
     border-radius: 15px;
 }
 
+.add-credit-title {
+    padding: 2vh;
+    width: 25vw;
+    text-align: center;
+    border-radius: 40px;
+    border: solid 10px #ffd04e;
+}
+
 .amount-container-icons {
     display: flex;
     flex-direction: row;
