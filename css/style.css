@@ -50,7 +50,8 @@ html, body {
     object-fit: contain;
   }
 
-.landing-page-top > h2 {
+.landing-page-top > h2,
+.add-credit-title > h2 {
     font-size: 2rem;
     text-align: center;
     color: #000000;
@@ -101,7 +102,7 @@ body {
 }
 
 .heading-middle {
-    margin-top: 3vh;
+    margin-top: 2.5vh;
     flex: 2;
 }
 
@@ -185,8 +186,8 @@ h1 {
 }
 
 .slot-lever > img {
-    margin-right: 13vw;
-    height: 32vh;
+    margin-right: 10vw;
+    height: 45vh;
     cursor: pointer;
 }
 
@@ -208,7 +209,7 @@ h1 {
     }
 .slot-footer {
     display: flex;
-    height: 10vh;
+    height: 7vh;
     align-items: center;
 }
 
@@ -264,9 +265,9 @@ h1 {
 .center-slot-machine-top {
     display: flex;
     flex-direction: row;
-    margin-top: 3vh;
+    margin-top: 5vh;
     width: 45vw;
-    height: 10vh;
+    height: 12vh;
 }
 
 .bets > h3, .winnings > h3, .credits > h3 {
@@ -280,7 +281,7 @@ h1 {
     display: flex;
     flex-direction: row;
     flex: 1;
-    height: 84vh;
+    height: 87vh;
     margin-top: 6vh;
 }
 
@@ -290,7 +291,7 @@ h1 {
     padding: 2vh;
     align-content: center;
     width: 50vw;
-    height: 78vh;
+    height: 60vh;
     border: #d59e29 6px solid;
     border-radius: 15px;
     background-color: #252525;
@@ -502,7 +503,8 @@ margin: 0 auto;
 /* } */ 
 
 .how-to-win-modal,
-.winnings-modal {
+.winnings-modal,
+.add-credit-modal {
     /* display: none;  */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -525,12 +527,44 @@ margin: 0 auto;
     margin: auto;
     padding: 20px;
     /* border: 1px solid #888; */
-    width: 80%;
+    width: 80vw;
     border-radius: 15px;
 }
 
+.add-credit-content {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../photos/choose-amount-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 75vw;
+    height: 60vh;
+    border-radius: 15px;
+    justify-content: center;
+}
+
+.add-credit-title {
+    padding: 2vh;
+    width: 30vw;
+    text-align: center;
+    border-radius: 40px;
+    border: solid 10px #ffd04e;
+}
+
+.amount-container-icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.amount-fifty > img,
+.amount-hundred > img,
+.amount-hundred-fifty > img {
+    width: 20vw;
+    padding: 4vh 1vw;
+}
+
 .close-win,
-.close-how {
+.close-how   {
     color: #aaaaaa;
     float: right;
     font-size: 28px;

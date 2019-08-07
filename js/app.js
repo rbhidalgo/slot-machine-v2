@@ -62,7 +62,8 @@ let howModal = document.querySelector(".how-to-win-modal");
 let winningsModal = document.querySelector(".winnings-modal");
 let closeBtnWin = document.querySelector('.close-win')
 let closeBtnHow = document.querySelector('.close-how')
-
+let addCreditBtn = document.querySelector('.add-credit')
+let creditModal = document.querySelector('.add-credit-modal')
 
 playBtn.addEventListener("click", function() {
 	currency = 50;
@@ -75,9 +76,11 @@ const toggleModal = e => {
     console.log(e.target)
     if (e.target.className === "how-btn") {
         howModal.classList.toggle("visible");
-	} else {
+	} else if (e.target.className === "win-btn") {
         winningsModal.classList.toggle("visible");
-	}
+	} else {
+        creditModal.classList.toggle("visible");
+    }
 };
 
 const closeModal = e => {
@@ -92,6 +95,7 @@ const closeModal = e => {
 headingRight.addEventListener("click", toggleModal);
 closeBtnWin.addEventListener("click", closeModal);
 closeBtnHow.addEventListener("click", closeModal);
+addCreditBtn.addEventListener("click", toggleModal)
 // window.addEventListener('click', toggleModal);
 
 // twentyBtn.addEventListener('click', function() {
