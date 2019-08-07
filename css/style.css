@@ -102,7 +102,7 @@ body {
 }
 
 .heading-middle {
-    margin-top: 3vh;
+    margin-top: 2.5vh;
     flex: 2;
 }
 
@@ -209,7 +209,7 @@ h1 {
     }
 .slot-footer {
     display: flex;
-    height: 10vh;
+    height: 7vh;
     align-items: center;
 }
 
@@ -265,9 +265,9 @@ h1 {
 .center-slot-machine-top {
     display: flex;
     flex-direction: row;
-    margin-top: 3vh;
+    margin-top: 5vh;
     width: 45vw;
-    height: 10vh;
+    height: 12vh;
 }
 
 .bets > h3, .winnings > h3, .credits > h3 {
@@ -281,7 +281,7 @@ h1 {
     display: flex;
     flex-direction: row;
     flex: 1;
-    height: 84vh;
+    height: 87vh;
     margin-top: 6vh;
 }
 
@@ -291,7 +291,7 @@ h1 {
     padding: 2vh;
     align-content: center;
     width: 50vw;
-    height: 78vh;
+    height: 60vh;
     border: #d59e29 6px solid;
     border-radius: 15px;
     background-color: #252525;
