@@ -82,7 +82,7 @@ const toggleModal = e => {
 	} else if (e.target.className === "win-btn") {
         winningsModal.classList.toggle("visible");
 	} else {
-        creditModal.classList.toggle("visible");
+        // creditModal.classList.toggle("visible");
     }
 };
 
@@ -95,10 +95,15 @@ const closeModal = e => {
     }
 }
 
+const addCreditAmount = e => {
+    creditModal.classList.toggle("visible");
+    console.log(e.target)
+}
+
 headingRight.addEventListener("click", toggleModal);
 closeBtnWin.addEventListener("click", closeModal);
 closeBtnHow.addEventListener("click", closeModal);
-addCreditBtn.addEventListener("click", toggleModal)
+addCreditBtn.addEventListener("click", addCreditAmount)
 // window.addEventListener('click', toggleModal);
 
 // twentyBtn.addEventListener('click', function() {
