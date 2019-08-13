@@ -71,7 +71,8 @@ let containerAmount = document.querySelector('.amount-container-icons')
 
 playBtn.addEventListener("click", function() {
 	landingPage.style.display = "none";
-	slotContainerDiv.style.display = "inline";
+    slotContainerDiv.style.display = "inline";
+    howModal.classList.toggle("visible");
 });
 
 const toggleModal = e => {
