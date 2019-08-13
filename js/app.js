@@ -64,6 +64,9 @@ let closeBtnWin = document.querySelector('.close-win')
 let closeBtnHow = document.querySelector('.close-how')
 let addCreditBtn = document.querySelector('.add-credit')
 let creditModal = document.querySelector('.add-credit-modal')
+let amountFifty = document.querySelector('.amount-fifty')
+let amountHundred = document.querySelector('.amount-hundred')
+let amountHundredFifty = document.querySelector('.amount-hundred-fifty')
 
 playBtn.addEventListener("click", function() {
 	currency = 50;
