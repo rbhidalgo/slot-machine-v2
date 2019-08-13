@@ -67,9 +67,10 @@ let creditModal = document.querySelector('.add-credit-modal')
 let amountFifty = document.querySelector('.amount-fifty')
 let amountHundred = document.querySelector('.amount-hundred')
 let amountHundredFifty = document.querySelector('.amount-hundred-fifty')
+let containerAmount = document.querySelector('.amount-container-icons')
 
 playBtn.addEventListener("click", function() {
-	currency = 50;
+	currency = 0;
 	totalPointsDisplay.innerHTML = `$${currency}.00`;
 	landingPage.style.display = "none";
 	slotContainerDiv.style.display = "inline";
@@ -82,7 +83,8 @@ const toggleModal = e => {
 	} else if (e.target.className === "win-btn") {
         winningsModal.classList.toggle("visible");
 	} else {
-        // creditModal.classList.toggle("visible");
+        creditModal.classList.toggle("visible");
+       addCreditAmount()
     }
 };
 
@@ -95,15 +97,22 @@ const closeModal = e => {
     }
 }
 
-const addCreditAmount = e => {
-    creditModal.classList.toggle("visible");
-    console.log(e.target)
+const addCreditAmount = () => {
+    containerAmount.addEventListener("click", e => {
+        console.log(e.target.className)
+        if (e.target.className === "img-fifty"){
+            currency + 50;
+            totalPointsDisplay.innerHTML = `$${currency}.00`;
+            creditModal.classList.remove("visible");
+        }
+    })
 }
 
 headingRight.addEventListener("click", toggleModal);
 closeBtnWin.addEventListener("click", closeModal);
 closeBtnHow.addEventListener("click", closeModal);
-addCreditBtn.addEventListener("click", addCreditAmount)
+addCreditBtn.addEventListener("click", toggleModal)
+
 // window.addEventListener('click', toggleModal);
 
 // twentyBtn.addEventListener('click', function() {
