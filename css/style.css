@@ -514,6 +514,7 @@ margin: 0 auto;
 .amount-hundred-fifty > img {
     width: 20vw;
     padding: 4vh 1vw;
+    cursor: pointer;
 }
 
 .close-win,
