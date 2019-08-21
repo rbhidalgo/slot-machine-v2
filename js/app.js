@@ -67,12 +67,12 @@ let creditModal = document.querySelector('.add-credit-modal')
 let amountFifty = document.querySelector('.amount-fifty')
 let amountHundred = document.querySelector('.amount-hundred')
 let amountHundredFifty = document.querySelector('.amount-hundred-fifty')
+let containerAmount = document.querySelector('.amount-container-icons')
 
 playBtn.addEventListener("click", function() {
-	currency = 50;
-	totalPointsDisplay.innerHTML = `$${currency}.00`;
 	landingPage.style.display = "none";
-	slotContainerDiv.style.display = "inline";
+    slotContainerDiv.style.display = "inline";
+    howModal.classList.toggle("visible");
 });
 
 const toggleModal = e => {
@@ -82,7 +82,7 @@ const toggleModal = e => {
 	} else if (e.target.className === "win-btn") {
         winningsModal.classList.toggle("visible");
 	} else {
-        // creditModal.classList.toggle("visible");
+        creditModal.classList.toggle("visible");
     }
 };
 
@@ -96,14 +96,30 @@ const closeModal = e => {
 }
 
 const addCreditAmount = e => {
-    creditModal.classList.toggle("visible");
-    console.log(e.target)
-}
+        console.log(e.target.className)
+        if (e.target.className === "img-fifty"){
+            currency += 50;
+            console.log(currency)
+            totalPointsDisplay.innerHTML = `$${currency}.00`;
+            creditModal.classList.remove("visible");
+        } else if (e.target.className === "img-hundred") {
+            currency += 100;
+            console.log(currency)
+            totalPointsDisplay.innerHTML = `$${currency}.00`;
+            creditModal.classList.remove("visible");
+        } else {
+            currency += 150;
+            totalPointsDisplay.innerHTML = `$${currency}.00`
+            creditModal.classList.remove("visible")
+        }
+    } 
 
 headingRight.addEventListener("click", toggleModal);
 closeBtnWin.addEventListener("click", closeModal);
 closeBtnHow.addEventListener("click", closeModal);
-addCreditBtn.addEventListener("click", addCreditAmount)
+addCreditBtn.addEventListener("click", toggleModal)
+containerAmount.addEventListener("click", addCreditAmount)
+
 // window.addEventListener('click', toggleModal);
 
 // twentyBtn.addEventListener('click', function() {
