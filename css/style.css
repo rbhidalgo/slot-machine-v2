@@ -247,7 +247,7 @@ h1 {
     background-color: #19be1f;
     color: white;
     box-shadow: 0 5px rgba(39, 39, 39, 0.404);
-    transform: translateY(4px);
+    transform: scale(.9);
   }
 
 /* .twenty:hover, .fifty:hover, .hundred:hover,
