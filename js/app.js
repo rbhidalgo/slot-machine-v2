@@ -68,6 +68,24 @@ let amountFifty = document.querySelector('.amount-fifty')
 let amountHundred = document.querySelector('.amount-hundred')
 let amountHundredFifty = document.querySelector('.amount-hundred-fifty')
 let containerAmount = document.querySelector('.amount-container-icons')
+let betBtns = document.querySelectorAll('.bet-btn');
+
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (let i = 0; i < betBtns.length; i++) {
+  betBtns[i].addEventListener("click", function() {
+    let current = document.getElementsByClassName("active");
+
+    // If there's no active class
+    if (current.length > 0) { 
+      current[0].className = current[0].className.replace(" active", "");
+    }
+
+    // Add the active class to the current/clicked button
+    this.className += " active";
+  });
+}
+
 
 playBtn.addEventListener("click", function() {
 	landingPage.style.display = "none";
