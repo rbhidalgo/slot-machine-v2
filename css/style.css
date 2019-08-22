@@ -213,7 +213,7 @@ h1 {
     align-items: center;
 }
 
-.bet-one, .bet-three, .bet-five {
+.bet-btn {
     text-align: center;
     background-color: #ffffff;
     color: #000;
@@ -243,7 +243,14 @@ h1 {
     height: 400px;
 }
 
-.twenty:hover, .fifty:hover, .hundred:hover,
+.active, .bet-btn:hover {
+    background-color: #016d29;
+    color: white;
+    box-shadow: 0 5px rgba(39, 39, 39, 0.404);
+    transform: scale(.9);
+  }
+
+/* .twenty:hover, .fifty:hover, .hundred:hover,
 .bet-one:hover, .bet-three:hover, .bet-five:hover {
     background-color: #19be1f}
 
@@ -252,7 +259,7 @@ h1 {
     background-color: #35b139;
     box-shadow: 0 5px rgba(39, 39, 39, 0.404);
     transform: translateY(4px);
-}
+} */
 
 .center-slot-machine {
     display: flex;
