@@ -244,7 +244,7 @@ h1 {
 }
 
 .active, .bet-btn:hover {
-    background-color: #19be1f;
+    background-color: #016d29;
     color: white;
     box-shadow: 0 5px rgba(39, 39, 39, 0.404);
     transform: scale(.9);
