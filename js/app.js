@@ -168,112 +168,112 @@ containerAmount.addEventListener("click", addCreditAmount)
 // } )
 
 betOnebtn.addEventListener("click", function() {
-	resetColor();
+	// resetColor();
 	// bet3Icons.style.display = 'none';
 	// bet5Icons.style.display = 'none';
 	lastBet = 5;
 	console.log(`bet one was pressed`);
-	spinSoundEff.play();
-	setInterval(() => {
-		betOnebtn.style.animation = "background-animation 3s 0s 1";
-		slotColumn1.style.animation = "cube-slot-ani 1.3s 0s 2";
-		slotColumn2.style.animation = "cube-slot-ani 1.2s 0s 2";
-		slotColumn3.style.animation = "cube-slot-ani 1.3s 0s 2";
-		slotColumn4.style.animation = "cube-slot-ani 1.2s 0s 2";
-		slotColumn5.style.animation = "cube-slot-ani 1s 0s 2";
-		slotColumn6.style.animation = "cube-slot-ani .9s 0s 2";
-		slotColumn7.style.animation = "cube-slot-ani .8s 0s 2";
-		slotColumn8.style.animation = "cube-slot-ani .7s 0s 2";
-		slotColumn9.style.animation = "cube-slot-ani .6s 0s 2";
-	}, 100);
-	photoGenerate();
-	resetAnimation();
-	setTimeout(() => {
-		totalPointsDisplay.innerHTML = `$${currency}.00`;
-		lastWinDisplay.innerHTML = `$${totalPoints}.00`;
-		lastBetDisplay.innerHTML = `$${lastBet}.00`;
-		totalPointsDisplay.style.color = "green";
-		lastWinDisplay.style.color = "green";
-		lastBetDisplay.style.color = "green";
-	}, 3000);
-	setTimeout(() => {
-		lastWinDisplay.style.color = "black";
-		totalPointsDisplay.style.color = "black";
-		lastBetDisplay.style.color = "black";
-	}, 5000);
+	// spinSoundEff.play();
+	// setInterval(() => {
+	// 	betOnebtn.style.animation = "background-animation 3s 0s 1";
+	// 	slotColumn1.style.animation = "cube-slot-ani 1.3s 0s 2";
+	// 	slotColumn2.style.animation = "cube-slot-ani 1.2s 0s 2";
+	// 	slotColumn3.style.animation = "cube-slot-ani 1.3s 0s 2";
+	// 	slotColumn4.style.animation = "cube-slot-ani 1.2s 0s 2";
+	// 	slotColumn5.style.animation = "cube-slot-ani 1s 0s 2";
+	// 	slotColumn6.style.animation = "cube-slot-ani .9s 0s 2";
+	// 	slotColumn7.style.animation = "cube-slot-ani .8s 0s 2";
+	// 	slotColumn8.style.animation = "cube-slot-ani .7s 0s 2";
+	// 	slotColumn9.style.animation = "cube-slot-ani .6s 0s 2";
+	// }, 100);
+	// photoGenerate();
+	// resetAnimation();
+	// setTimeout(() => {
+	// 	totalPointsDisplay.innerHTML = `$${currency}.00`;
+	// 	lastWinDisplay.innerHTML = `$${totalPoints}.00`;
+	// 	lastBetDisplay.innerHTML = `$${lastBet}.00`;
+	// 	totalPointsDisplay.style.color = "green";
+	// 	lastWinDisplay.style.color = "green";
+	// 	lastBetDisplay.style.color = "green";
+	// }, 3000);
+	// setTimeout(() => {
+	// 	lastWinDisplay.style.color = "black";
+	// 	totalPointsDisplay.style.color = "black";
+	// 	lastBetDisplay.style.color = "black";
+	// }, 5000);
 });
 
 betThreebtn.addEventListener("click", function() {
-	resetColor();
+	// resetColor();
 	// bet3Icons.style.display = 'flex';
 	// bet5Icons.style.display = 'none';
 	lastBet = 15;
 	console.log(`bet one was pressed`);
-	spinSoundEff.play();
-	setInterval(() => {
-		betThreebtn.style.animation = "background-animation 3s 0s 1";
-		slotColumn1.style.animation = "cube-slot-ani 1.3s 0s 2";
-		slotColumn2.style.animation = "cube-slot-ani 1.2s 0s 2";
-		slotColumn3.style.animation = "cube-slot-ani 1.3s 0s 2";
-		slotColumn4.style.animation = "cube-slot-ani 1.2s 0s 2";
-		slotColumn5.style.animation = "cube-slot-ani 1s 0s 2";
-		slotColumn6.style.animation = "cube-slot-ani .9s 0s 2";
-		slotColumn7.style.animation = "cube-slot-ani .8s 0s 2";
-		slotColumn8.style.animation = "cube-slot-ani .7s 0s 2";
-		slotColumn9.style.animation = "cube-slot-ani .6s 0s 2";
-	}, 100);
-	photoGenerate();
-	resetAnimation();
-	setTimeout(() => {
-		totalPointsDisplay.innerHTML = `$${currency}.00`;
-		lastWinDisplay.innerHTML = `$${totalPoints}.00`;
-		lastBetDisplay.innerHTML = `$${lastBet}.00`;
-		totalPointsDisplay.style.color = "green";
-		lastWinDisplay.style.color = "green";
+	// spinSoundEff.play();
+	// setInterval(() => {
+	// 	betThreebtn.style.animation = "background-animation 3s 0s 1";
+	// 	slotColumn1.style.animation = "cube-slot-ani 1.3s 0s 2";
+	// 	slotColumn2.style.animation = "cube-slot-ani 1.2s 0s 2";
+	// 	slotColumn3.style.animation = "cube-slot-ani 1.3s 0s 2";
+	// 	slotColumn4.style.animation = "cube-slot-ani 1.2s 0s 2";
+	// 	slotColumn5.style.animation = "cube-slot-ani 1s 0s 2";
+	// 	slotColumn6.style.animation = "cube-slot-ani .9s 0s 2";
+	// 	slotColumn7.style.animation = "cube-slot-ani .8s 0s 2";
+	// 	slotColumn8.style.animation = "cube-slot-ani .7s 0s 2";
+	// 	slotColumn9.style.animation = "cube-slot-ani .6s 0s 2";
+	// }, 100);
+	// photoGenerate();
+	// resetAnimation();
+	// setTimeout(() => {
+	// 	totalPointsDisplay.innerHTML = `$${currency}.00`;
+	// 	lastWinDisplay.innerHTML = `$${totalPoints}.00`;
+	// 	lastBetDisplay.innerHTML = `$${lastBet}.00`;
+	// 	totalPointsDisplay.style.color = "green";
+	// 	lastWinDisplay.style.color = "green";
 
-		lastBetDisplay.style.color = "green";
-	}, 3000);
-	setTimeout(() => {
-		lastWinDisplay.style.color = "black";
-		totalPointsDisplay.style.color = "black";
-		lastBetDisplay.style.color = "black";
-	}, 5000);
+	// 	lastBetDisplay.style.color = "green";
+	// }, 3000);
+	// setTimeout(() => {
+	// 	lastWinDisplay.style.color = "black";
+	// 	totalPointsDisplay.style.color = "black";
+	// 	lastBetDisplay.style.color = "black";
+	// }, 5000);
 });
 
 betFivebtn.addEventListener("click", function() {
-	resetColor();
+	// resetColor();
 	// bet3Icons.style.display = 'flex';
 	// bet5Icons.style.display = 'flex';
 	lastBet = 25;
 	console.log(`bet one was pressed`);
-	spinSoundEff.play();
-	setInterval(() => {
-		betFivebtn.style.animation = "background-animation 3s 0s 1";
-		slotColumn1.style.animation = "cube-slot-ani 1.3s 0s 2";
-		slotColumn2.style.animation = "cube-slot-ani 1.2s 0s 2";
-		slotColumn3.style.animation = "cube-slot-ani 1.3s 0s 2";
-		slotColumn4.style.animation = "cube-slot-ani 1.2s 0s 2";
-		slotColumn5.style.animation = "cube-slot-ani 1s 0s 2";
-		slotColumn6.style.animation = "cube-slot-ani .9s 0s 2";
-		slotColumn7.style.animation = "cube-slot-ani .8s 0s 2";
-		slotColumn8.style.animation = "cube-slot-ani .7s 0s 2";
-		slotColumn9.style.animation = "cube-slot-ani .6s 0s 2";
-	}, 100);
-	photoGenerate();
-	resetAnimation();
-	setTimeout(() => {
-		totalPointsDisplay.innerHTML = `$${currency}.00`;
-		lastWinDisplay.innerHTML = `$${totalPoints}.00`;
-		lastBetDisplay.innerHTML = `$${lastBet}.00`;
-		totalPointsDisplay.style.color = "green";
-		lastWinDisplay.style.color = "green";
-		lastBetDisplay.style.color = "green";
-	}, 3000);
-	setTimeout(() => {
-		lastWinDisplay.style.color = "black";
-		totalPointsDisplay.style.color = "black";
-		lastBetDisplay.style.color = "black";
-	}, 5000);
+	// spinSoundEff.play();
+	// setInterval(() => {
+	// 	betFivebtn.style.animation = "background-animation 3s 0s 1";
+	// 	slotColumn1.style.animation = "cube-slot-ani 1.3s 0s 2";
+	// 	slotColumn2.style.animation = "cube-slot-ani 1.2s 0s 2";
+	// 	slotColumn3.style.animation = "cube-slot-ani 1.3s 0s 2";
+	// 	slotColumn4.style.animation = "cube-slot-ani 1.2s 0s 2";
+	// 	slotColumn5.style.animation = "cube-slot-ani 1s 0s 2";
+	// 	slotColumn6.style.animation = "cube-slot-ani .9s 0s 2";
+	// 	slotColumn7.style.animation = "cube-slot-ani .8s 0s 2";
+	// 	slotColumn8.style.animation = "cube-slot-ani .7s 0s 2";
+	// 	slotColumn9.style.animation = "cube-slot-ani .6s 0s 2";
+	// }, 100);
+	// photoGenerate();
+	// resetAnimation();
+	// setTimeout(() => {
+	// 	totalPointsDisplay.innerHTML = `$${currency}.00`;
+	// 	lastWinDisplay.innerHTML = `$${totalPoints}.00`;
+	// 	lastBetDisplay.innerHTML = `$${lastBet}.00`;
+	// 	totalPointsDisplay.style.color = "green";
+	// 	lastWinDisplay.style.color = "green";
+	// 	lastBetDisplay.style.color = "green";
+	// }, 3000);
+	// setTimeout(() => {
+	// 	lastWinDisplay.style.color = "black";
+	// 	totalPointsDisplay.style.color = "black";
+	// 	lastBetDisplay.style.color = "black";
+	// }, 5000);
 });
 
 function resetColor() {
