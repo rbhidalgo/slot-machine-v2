@@ -69,6 +69,7 @@ let amountHundred = document.querySelector('.amount-hundred')
 let amountHundredFifty = document.querySelector('.amount-hundred-fifty')
 let containerAmount = document.querySelector('.amount-container-icons')
 let betBtns = document.querySelectorAll('.bet-btn');
+let lever = document.querySelector('.slot-lever');
 
 
 // Loop through the buttons and add the active class to the current/clicked button
@@ -137,6 +138,36 @@ closeBtnWin.addEventListener("click", closeModal);
 closeBtnHow.addEventListener("click", closeModal);
 addCreditBtn.addEventListener("click", toggleModal)
 containerAmount.addEventListener("click", addCreditAmount)
+
+lever.addEventListener("click", function() {
+	spinSoundEff.play();
+	setInterval(() => {
+		slotColumn1.style.animation = "cube-slot-ani 1.3s 0s 2";
+		slotColumn2.style.animation = "cube-slot-ani 1.2s 0s 2";
+		slotColumn3.style.animation = "cube-slot-ani 1.3s 0s 2";
+		slotColumn4.style.animation = "cube-slot-ani 1.2s 0s 2";
+		slotColumn5.style.animation = "cube-slot-ani 1s 0s 2";
+		slotColumn6.style.animation = "cube-slot-ani .9s 0s 2";
+		slotColumn7.style.animation = "cube-slot-ani .8s 0s 2";
+		slotColumn8.style.animation = "cube-slot-ani .7s 0s 2";
+		slotColumn9.style.animation = "cube-slot-ani .6s 0s 2";
+	}, 100);
+	photoGenerate();
+	resetAnimation();
+	setTimeout(() => {
+		totalPointsDisplay.innerHTML = `$${currency}.00`;
+		lastWinDisplay.innerHTML = `$${totalPoints}.00`;
+		lastBetDisplay.innerHTML = `$${lastBet}.00`;
+		totalPointsDisplay.style.color = "green";
+		lastWinDisplay.style.color = "green";
+		lastBetDisplay.style.color = "green";
+	}, 3000);
+	setTimeout(() => {
+		lastWinDisplay.style.color = "black";
+		totalPointsDisplay.style.color = "black";
+		lastBetDisplay.style.color = "black";
+	}, 5000);
+})
 
 // window.addEventListener('click', toggleModal);
 
