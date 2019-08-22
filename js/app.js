@@ -140,6 +140,14 @@ addCreditBtn.addEventListener("click", toggleModal)
 containerAmount.addEventListener("click", addCreditAmount)
 
 lever.addEventListener("click", function() {
+	if (currency <= 0) {
+		console.log(`You Lost!`);
+		// slotContainerDiv.style.display = "none";
+		// landingPage.style.display = "flex";
+		// document.querySelector(".amount-h1").innerHTML = "Play Again?";
+		creditModal.classList.toggle("visible");
+		currency = 0;
+	} else {
 	spinSoundEff.play();
 	setInterval(() => {
 		slotColumn1.style.animation = "cube-slot-ani 1.3s 0s 2";
@@ -167,6 +175,7 @@ lever.addEventListener("click", function() {
 		totalPointsDisplay.style.color = "black";
 		lastBetDisplay.style.color = "black";
 	}, 5000);
+}
 })
 
 // window.addEventListener('click', toggleModal);
@@ -581,9 +590,10 @@ function photoGenerate() {
 function gameOver() {
 	if (currency <= 0) {
 		console.log(`You Lost!`);
-		slotContainerDiv.style.display = "none";
-		landingPage.style.display = "flex";
-		document.querySelector(".amount-h1").innerHTML = "Play Again?";
+		// slotContainerDiv.style.display = "none";
+		// landingPage.style.display = "flex";
+		// document.querySelector(".amount-h1").innerHTML = "Play Again?";
+		// creditModal.classList.toggle("visible");
 		currency = 0;
 	}
 }
