@@ -146,8 +146,9 @@ lever.addEventListener("click", function() {
 		// landingPage.style.display = "flex";
 		// document.querySelector(".amount-h1").innerHTML = "Play Again?";
 		creditModal.classList.toggle("visible");
-		currency = 0;
+		// currency = 0;
 	} else {
+		resetColor();
 	spinSoundEff.play();
 	setInterval(() => {
 		slotColumn1.style.animation = "cube-slot-ani 1.3s 0s 2";
