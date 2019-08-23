@@ -179,17 +179,17 @@ lever.addEventListener("click", function() {
 })
 
 betOnebtn.addEventListener("click", function() {
-	lastBet = 5;
+	lastBet = 1;
 	console.log(`bet one was pressed`);
 });
 
 betThreebtn.addEventListener("click", function() {
-	lastBet = 15;
+	lastBet = 3;
 	console.log(`bet one was pressed`);
 });
 
 betFivebtn.addEventListener("click", function() {
-	lastBet = 25;
+	lastBet = 5;
 	console.log(`bet one was pressed`);
 });
 
