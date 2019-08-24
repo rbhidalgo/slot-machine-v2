@@ -142,11 +142,7 @@ containerAmount.addEventListener("click", addCreditAmount)
 lever.addEventListener("click", function() {
 	if (currency <= 0) {
 		console.log(`You Lost!`);
-		// slotContainerDiv.style.display = "none";
-		// landingPage.style.display = "flex";
-		// document.querySelector(".amount-h1").innerHTML = "Play Again?";
 		creditModal.classList.toggle("visible");
-		// currency = 0;
 	} else {
 		resetColor();
 	spinSoundEff.play();
