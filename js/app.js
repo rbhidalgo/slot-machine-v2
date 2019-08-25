@@ -130,7 +130,7 @@ const addCreditAmount = e => {
             currency += 150;
             totalPointsDisplay.innerHTML = `$${currency}.00`
             creditModal.classList.remove("visible")
-        }
+		}
     } 
 
 headingRight.addEventListener("click", toggleModal);
@@ -168,6 +168,7 @@ lever.addEventListener("click", function() {
 		totalPointsDisplay.style.color = "green";
 		lastWinDisplay.style.color = "green";
 		lastBetDisplay.style.color = "green";
+		document.querySelector('#slot-lever-img').src="./photos/handle@2x.png";
 	}, 3000);
 	setTimeout(() => {
 		lastWinDisplay.style.color = "black";
