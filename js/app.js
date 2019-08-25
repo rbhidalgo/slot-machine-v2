@@ -130,7 +130,7 @@ const addCreditAmount = e => {
             currency += 150;
             totalPointsDisplay.innerHTML = `$${currency}.00`
             creditModal.classList.remove("visible")
-        }
+		}
     } 
 
 headingRight.addEventListener("click", toggleModal);
@@ -140,6 +140,8 @@ addCreditBtn.addEventListener("click", toggleModal)
 containerAmount.addEventListener("click", addCreditAmount)
 
 lever.addEventListener("click", function() {
+	console.log(lever)
+	document.querySelector('#slot-lever-img').src="./photos/Beer_Glass_1.gif";
 	if (currency <= 0) {
 		console.log(`You Lost!`);
 		creditModal.classList.toggle("visible");
@@ -166,6 +168,7 @@ lever.addEventListener("click", function() {
 		totalPointsDisplay.style.color = "green";
 		lastWinDisplay.style.color = "green";
 		lastBetDisplay.style.color = "green";
+		document.querySelector('#slot-lever-img').src="./photos/handle@2x.png";
 	}, 3000);
 	setTimeout(() => {
 		lastWinDisplay.style.color = "black";
