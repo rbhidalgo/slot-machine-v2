@@ -141,7 +141,7 @@ containerAmount.addEventListener("click", addCreditAmount)
 
 lever.addEventListener("click", function() {
 	console.log(lever)
-	document.querySelector('#slot-lever-img').src="./photos/Beer_Glass_1.gif";
+	document.querySelector('#slot-lever-img').src="./photos/handlebaranimation.gif";
 	if (currency <= 0) {
 		console.log(`You Lost!`);
 		creditModal.classList.toggle("visible");
