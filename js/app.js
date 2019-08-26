@@ -168,7 +168,7 @@ lever.addEventListener("click", function() {
 		totalPointsDisplay.style.color = "green";
 		lastWinDisplay.style.color = "green";
 		lastBetDisplay.style.color = "green";
-		document.querySelector('#slot-lever-img').src="./photos/handle@2x.png";
+		document.querySelector('#slot-lever-img').src="./photos/handlewhitespace.png";
 	}, 3000);
 	setTimeout(() => {
 		lastWinDisplay.style.color = "black";
