@@ -141,13 +141,13 @@ containerAmount.addEventListener("click", addCreditAmount)
 
 lever.addEventListener("click", function() {
 	console.log(lever)
-	document.querySelector('#slot-lever-img').src="./photos/handlebaranimation.gif";
 	if (currency <= 0) {
 		console.log(`You Lost!`);
 		creditModal.classList.toggle("visible");
 	} else {
 		resetColor();
 	spinSoundEff.play();
+	document.querySelector('#slot-lever-img').src="./photos/handlebaranimation.gif";
 	setInterval(() => {
 		slotColumn1.style.animation = "cube-slot-ani 1.3s 0s 2";
 		slotColumn2.style.animation = "cube-slot-ani 1.2s 0s 2";
