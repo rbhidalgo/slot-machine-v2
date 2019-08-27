@@ -164,7 +164,7 @@ lever.addEventListener("click", function() {
 
 	setTimeout(() => {
 	document.querySelector('#slot-lever-img').src="./photos/handlewhitespace.png";
-	}, 2000)
+	}, 1800)
 
 	setTimeout(() => {
 		totalPointsDisplay.innerHTML = `$${currency}.00`;
